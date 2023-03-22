@@ -47,6 +47,17 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> Add a link to your deployed project.
+
+- [Live Demo Link](https://google.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 ## :computer: Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
@@ -86,7 +97,7 @@ To run the project, follow these instructions:
 - After Cloning this repo to your local machine.
 - To get it running on your default browser and local host, run:
 ```
-npm start
+Open the index.html in the project directory with your preferred browser to run the project
 ```
 
 ### Run tests
