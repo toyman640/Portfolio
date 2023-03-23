@@ -25,6 +25,15 @@ html body {
   color: #6070ff;
 }
 
+.stacks a {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: #6070ff;
+  font-size: 0.75em;
+  line-height: 1em;
+  padding: 0.313em;
+}
+
 #icon a {
   text-decoration: none;
   color: #6070ff;
@@ -210,16 +219,6 @@ html body {
   margin-top: 0.125em;
   width: 12.5em;
   margin-left: -2.5em;
-
-}
-
-.stacks a {
-  font-family: 'Poppins', sans-serif;
-  text-decoration: none;
-  color: #6070ff;
-  font-size: 0.75em;
-  line-height: 1em;
-  padding: 0.313em;
 }
 
 .stack-button {
@@ -255,7 +254,6 @@ html body {
 
 .content {
   width: 20.438em;
-  
 }
 
 .about {
@@ -318,14 +316,14 @@ html body {
 .real-stack li {
   font-family: 'Poppins', sans-serif;
   background-color: #f7f7f9;
-  width: 18.939em;
+  width: 303px;
   font-weight: 500;
   border-radius: 0.5em;
   padding-top: 0.313em;
   padding-left: 0.313em;
   padding-bottom: 0.313em;
   font-size: 0.938;
-  margin-left: -3.125em;
+  margin-left: -50px;
 }
 
 .words-1 {
