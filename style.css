@@ -354,6 +354,7 @@ form li {
   align-items: center;
   flex-direction: column;
   border-top-left-radius: 100px;
+  height: 779px;
 }
 
 .c-eli1 {
@@ -387,6 +388,7 @@ form li {
 }
 
 .contact-text {
+  font-family: 'Poppins', sans-serif;
   display: flex;
   text-align: center;
   color: #fff;
@@ -396,10 +398,12 @@ form li {
   font-size: 1.25em;
   line-height: 1.75em;
   font-weight: 400;
+  font-style: normal;
 }
 
 form {
-  margin-top: 30px;
+  margin-top: 70px;
+  margin-left: 50px;
 }
 
 input,
@@ -419,15 +423,22 @@ input {
   height: 3em;
 }
 
+::placeholder {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #172b4d;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .contact-link {
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
   color: #6070ff;
   font-weight: 500;
   font-size: 1.0625em;
-  line-height: 3.5em;
+  line-height: 24px;
   letter-spacing: 0.03em;
-  padding: 5px;
 }
 
 .contact-button {
@@ -436,17 +447,20 @@ input {
   height: 3em;
   width: 8.875em;
   margin-bottom: 50px;
-  margin-top: -100px;
+  float: left;
+  margin-top: -5px;
+  margin-left: -50px;
+  padding: 12px, 16px, 12px, 16px;
 }
 
 .contact-drec {
   position: absolute;
-  margin-top: -39px;
+  margin-top: -22px;
   margin-left: 200px;
 }
 
 .contact-deli {
   position: absolute;
-  margin-top: -10px;
+  margin-top: 6px;
   margin-left: 200px;
 }
