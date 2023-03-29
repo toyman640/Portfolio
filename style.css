@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
 html body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #e5e5e5;
+  width: 375px;
 }
 
 .first-section {
@@ -341,4 +342,133 @@ button {
   position: absolute;
   margin-top: 0.938em;
   margin-left: 0.938em;
+}
+
+.contact-section {
+  background-color: #6070ff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-top-left-radius: 100px;
+  height: 779px;
+}
+
+.c-eli1 {
+  position: absolute;
+  margin-top: 3.125em;
+}
+
+.c-eli2 {
+  position: absolute;
+  margin-top: 20px;
+  margin-right: -310px;
+}
+
+.c-eli3 {
+  margin-top: 2.8125em;
+  margin-right: -20.3125em;
+}
+
+.last-line {
+  padding-bottom: 150px;
+}
+
+.contact-title {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  line-height: 3.25em;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2.5em;
+  margin-top: -70px;
+}
+
+.contact-text {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  text-align: center;
+  color: #fff;
+  width: 327px;
+  height: 137px;
+  margin-top: -55px;
+  font-size: 1.25em;
+  line-height: 1.75em;
+  font-weight: 400;
+  font-style: normal;
+}
+
+form {
+  margin-top: 70px;
+  margin-left: 25px;
+}
+
+input,
+textarea {
+  width: 23.4375em;
+  border-radius: 0.5em;
+  margin-bottom: 15px;
+  border: 1px solid #cfd8dc;
+  padding-left: 10px;
+}
+
+textarea {
+  padding-top: 20px;
+}
+
+input {
+  height: 3em;
+}
+
+::placeholder {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #172b4d;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contact-link {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 1.0625em;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.contact-button {
+  border: none;
+  border-radius: 0.5em;
+  height: 3em;
+  width: 8.875em;
+  margin-bottom: 50px;
+  float: left;
+  margin-top: -5px;
+  padding: 12px, 16px, 12px, 16px;
+}
+
+.contact-link:hover {
+  color: #6070ff;
+  border-bottom: 2px solid #6070ff;
+}
+
+.contact-link:active {
+  color: #fff;
+}
+
+.contact-button:active {
+  background-color: #1b2fde;
+}
+
+.contact-drec {
+  position: absolute;
+  margin-top: -22px;
+  margin-left: 200px;
+}
+
+.contact-deli {
+  position: absolute;
+  margin-top: 6px;
+  margin-left: 200px;
 }
