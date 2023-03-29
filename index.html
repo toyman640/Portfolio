@@ -9,48 +9,37 @@
 </head>
 <body>
     <section class="first-section">
-        <header>
+        <header class="header">
+            <a class="logo" href="http://">My Logo</a>
             <nav class="nav-menu">
-                <ul>
-                    <li id="icon"><a href="http://">My Logo</a></li>
-                    <li ><img class="ham" src="images/hamburger.svg" alt="" srcset=""></li>
-                </ul>
+                    
+                <img class="ham" src="images/hamburger.svg" alt="" srcset="">
+                <div>
+                    <ul class="desk-menu">
+                        <li class="item-1">Portfolio</li>
+                        <li class="item-1">About</li>
+                        <li class="item-1">Contact</li>
+                    </ul>
+                </div>
+                
             </nav>
         </header>
-        <section class="main-section">
-            <img class="rec-1" src="images/Rectangle-half.svg" alt="rectangle-shape" srcset="">
-            <img class="eli-1" src="images/Ellipse-half.svg" alt="ellipse-shape">
-            <img class="rec-2" src="images/rec-top.svg" alt="rectangle-shape" srcset="">
-            <img class="cir-1" src="images/circle-top.svg" alt="circle-shape" srcset="">
-            <img class="eli2" src="images/big-eli.svg" alt="ellipse-shape" srcset="">
-            <img class="rec-3" src="images/big-rec.svg" alt="rectangle-shape" srcset="">
-            <div class="intro">
-                <h1 class="my-name" >I'm Omotoyosi. <br>
-                    Glad to see <br>
-                    you!
-                </h1>
-                <img class="name-eli" src="images/Elli-name.svg" alt="elipse" srcset="">
-                <p class="info">I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
-    
-                <h4 class="connect">
-                    LET’S CONNECT
-                </h4>
-                <img class="elid-1" src="images/Elli-down1.svg" alt="elipse" srcset="">
-                <img class="elid-2" src="images/Elli-down2.svg" alt="elipse" srcset="">
-                <ul class="socials">
-                    <li class="first"><a href="https://twitter.com/_@toyman"><img src="images/twitter.svg" alt="twiiter-icon"></a></li>
-                    <li><a href="https://www.linkedin.com/in/falako-omotoyosi-b86a1a169/" ><img src="images/Linkedin icon.svg" alt="Linkedin-icon" srcset=""></a></li>
-                    <li><a href="https://medium.com/" ><img src="images/medium (2).svg" alt="medium-icon" srcset=""></a></li>
-                    <li><a href="https://github.com/toyman640"><img src="images/github.svg" alt="github-icon" srcset=""></a></li>
-                    <li><a href="https://wellfound.com/"><img src="images/angel.svg" alt="angel-list-icon" srcset=""></a></li>
-                </ul>
-                <div class="down-shapes">
-                    <img class="circle-trans" src="images/circle-trans.svg" alt="ellipse" srcset="">
-                    <img class="rec-down" src="images/Recd-light.svg" alt="rectangle-shape" srcset="">
-                    <img class="cir-down" src="images/cir-d.svg" alt="circle-shape" srcset="">
-                </div>
-            </div>
-        </section>
+       <div class="intro">
+            <h1 class="title">I’m Omotoyosi.
+                Glad to see you!
+            </h1>
+            <p class="intro-text">I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
+            <h4 class="connect">
+                LET’S CONNECT
+            </h4>
+            <ul class="socials">
+                <li class="first"><a href="https://twitter.com/_@toyman"><img src="images/twitter.svg" alt="twiiter-icon"></a></li>
+                <li><a href="https://www.linkedin.com/in/falako-omotoyosi-b86a1a169/" ><img src="images/Linkedin icon.svg" alt="Linkedin-icon" srcset=""></a></li>
+                <li><a href="https://medium.com/" ><img src="images/medium (2).svg" alt="medium-icon" srcset=""></a></li>
+                <li><a href="https://github.com/toyman640"><img src="images/github.svg" alt="github-icon" srcset=""></a></li>
+                <li><a href="https://wellfound.com/"><img src="images/angel.svg" alt="angel-list-icon" srcset=""></a></li>
+            </ul>
+       </div>
     </section>
     <section class="second-section">
         <div class="item works-1">
@@ -169,27 +158,23 @@
         </ul>
     </section>
     <section class="contact-section">
-        <img  class="c-eli1" src="images/contact-Ellipse1.svg" alt="">
-        <img class="c-eli2" src="images/contact-Rectangle1.svg" alt="">
-        <img class="c-eli3" src="images/contact-Ellipse2.svg" alt="">
-        <h3 class="contact-title"> Contact me</h3>
-        <div >
-            <p class="contact-text">If you have an application you are interested in developing, a feature that you need  built or a project that needs coding. 
+        <div class="content">
+            <h3 class="contact-head">Contact me</h3>
+            <p class="contact-text">If you have an application you are interested in developing, a    feature that you need built or a project that needs coding.
                 I’d love to help with it!
-            </p> 
+            </p>
+            <form action="https://formspree.io/f/xbjezrzn" method="POST">
+                <div class="fields">
+                    <input name="name" type="text" maxLength="30" placeholder="John Doe">
+                    <input type="email" name="email" id="email" placeholder="loremipsum@gmail.com">
+                    <textarea maxLength="500" name="message" id="" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+                </div>
+                <button class="contact-button" type="submit"><span class="contact-link">Get in touch</span></button>
+                
+                
+            </form>   
         </div>
-        <form action="https://formspree.io/f/xbjezrzn" method="POST">
-            <div class="fields">
-                <input name="name" type="text" maxLength="30" placeholder="John Doe">
-                <input type="email" name="email" id="email" placeholder="loremipsum@gmail.com">
-                <textarea maxLength="500" name="message" id="" cols="30" rows="10" placeholder="Write your message here..."></textarea>
-            </div>
-            <img class="contact-drec" src="images/contact-Rectangle7.svg" alt="">
-            <img class="contact-deli" src="images/contact-Ellipse5.svg" alt="">
-            <button class="contact-button" type="submit"><span class="contact-link">Get in touch</span></button>
-           
-            
-        </form>   
+       
     </section>
    
 </body>
