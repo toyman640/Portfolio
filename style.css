@@ -5,6 +5,7 @@ html body {
   margin: 0;
   padding: 0;
   background-color: #e5e5e5;
+  width: 375px;
 }
 
 .first-section {
@@ -308,11 +309,6 @@ button {
   margin-left: -0.625em;
 }
 
-form li {
-  list-style: none;
-  margin-left: -50px;
-}
-
 .about-list li {
   margin-bottom: 1.25em;
   padding-top: 1.25em;
@@ -403,7 +399,7 @@ form li {
 
 form {
   margin-top: 70px;
-  margin-left: 50px;
+  margin-left: 25px;
 }
 
 input,
@@ -449,8 +445,20 @@ input {
   margin-bottom: 50px;
   float: left;
   margin-top: -5px;
-  margin-left: -50px;
   padding: 12px, 16px, 12px, 16px;
+}
+
+.contact-link:hover {
+  color: #6070ff;
+  border-bottom: 2px solid #6070ff;
+}
+
+.contact-link:active {
+  color: #fff;
+}
+
+.contact-button:active {
+  background-color: #1b2fde;
 }
 
 .contact-drec {
