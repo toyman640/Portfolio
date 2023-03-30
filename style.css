@@ -16,8 +16,16 @@ body {
   display: none;
 }
 
-.header {
+.flex-row {
   display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
   justify-content: space-between;
 }
 
@@ -36,9 +44,6 @@ body {
 
 .intro {
   font-family: 'Poppins', sans-serif;
-  background: url('images/header-shapes-2.svg') no-repeat;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   padding-top: 70px;
 }
@@ -64,6 +69,10 @@ body {
   margin-bottom: 0;
 }
 
+.card-sections {
+  border-radius: 8px;
+}
+
 .connect {
   font-family: 'Poppins', sans-serif;
   color: #7f8cff;
@@ -75,7 +84,6 @@ body {
 }
 
 .socials {
-  display: flex;
   list-style: none;
   justify-content: space-between;
   width: 200px;
@@ -359,11 +367,6 @@ input {
   padding: 12px, 16px, 12px, 16px;
 }
 
-.contact-link:hover {
-  color: #6070ff;
-  border-bottom: 2px solid #6070ff;
-}
-
 .contact-link:active {
   color: #fff;
 }
@@ -382,4 +385,315 @@ input {
   position: absolute;
   margin-top: 6px;
   margin-left: 200px;
+}
+
+.desk-works {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #e5e5e5;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .flex-row {
+    display: flex;
+  }
+
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ham {
+    display: none;
+  }
+
+  .logo {
+    padding: 20px;
+    margin-left: 8%;
+  }
+
+  .desk-menu {
+    list-style: none;
+    padding-top: 5px;
+    margin-right: 100px;
+  }
+
+  .desk-menu li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 93.75%;
+    line-height: 20px;
+    margin-right: 20px;
+    font-weight: 500;
+    color: #344563;
+  }
+
+  .first-section {
+    background: #fff;
+  }
+
+  .intro {
+    position: relative;
+    background: url('images/desk-Header-bg.svg')  no-repeat;
+    background-size: contain;
+    padding: 0 2.5px 0 2.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-section {
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+  }
+
+  .title {
+    font-family: 'Poppins', sans-serif;
+    width: 35%;
+    align-items: center;
+  }
+
+  .intro-text {
+    width: 63%;
+    margin-left: 1%;
+  }
+
+  .connect {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 85px;
+  }
+
+  .socials {
+    margin-left: 4%;
+    padding-bottom: 260px;
+  }
+
+  .second-section {
+    display: none;
+  }
+
+  .desk-works {
+    align-items: center;
+    margin-top: 50px;
+    width: 90%;
+    margin-left: 5%;
+    row-gap: 100px;
+  }
+
+  .works-card {
+    display: grid;
+    grid-template-columns: 578px 578px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 24px;
+  }
+
+  .third-card {
+    border: 2px solid #a7aeff;
+  }
+
+  .works-content {
+    width: 75%;
+    margin-left: 6.25%;
+    margin-top: -15px;
+  }
+
+  .works-d-title {
+    font-family: 'Poppins', sans-serif;
+    color: #091e42;
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  .work-info {
+    margin-top: -8%;
+    display: flex;
+    list-style: none;
+    width: 70%;
+    justify-content: space-between;
+  }
+
+  .work-info li {
+    font-family: 'Poppins', sans-serif;
+    color: #6b778c;
+    font-size: 18px;
+    margin-left: -39px;
+  }
+
+  .works-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .desk-stacks {
+    list-style: none;
+    justify-content: space-between;
+    width: 35%;
+    margin-bottom: 55px;
+  }
+
+  .desk-stacks li {
+    margin-left: -40px;
+  }
+
+  .desk-stack-button {
+    border: none;
+    border-radius: 8px;
+    background: #ebebff;
+    padding: 4px 12px;
+  }
+
+  .desk-stack-button a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #6070ff;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .desk-see-proj {
+    border: 0.063em solid #6070ff;
+    border-radius: 1em;
+    width: 126px;
+    height: 48px;
+    margin-bottom: 1.875em;
+  }
+
+  .desk-project-link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    color: #396df2;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;
+  }
+
+  .desk-stacks2 {
+    list-style: none;
+    justify-content: space-between;
+    width: 75%;
+    margin-left: -45px;
+    margin-bottom: 55px;
+  }
+
+  .third-section {
+    display: none;
+  }
+
+  .desk-about {
+    background: #fff;
+    border-top-right-radius: 100px;
+    margin-top: 150px;
+    padding-bottom: 100px;
+  }
+
+  .desk-about-content {
+    display: grid;
+    grid-template-columns: 578px 578px;
+    width: 75%;
+    margin-left: 6.5%;
+  }
+
+  .deskabout {
+    font-weight: 700;
+    color: #091e42;
+    font-size: 40px;
+    line-height: 52px;
+    padding-top: 50px;
+  }
+
+  .deskabout-info {
+    color: #344563;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 80%;
+    margin-top: -40px;
+  }
+
+  .deskconnect {
+    font-family: 'Poppins', sans-serif;
+    color: #7f8cff;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .desksocials {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 200px;
+    margin-left: -40px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+  .desk-about-content2 {
+    padding-top: 50px;
+  }
+
+  .desk-real-stack {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+    margin-top: 1.875em;
+  }
+
+  .desk-real-stack li {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f9;
+    width: 100px;
+    font-weight: 500;
+    border-radius: 0.5em;
+    padding-top: 0.313em;
+    padding-left: 0.313em;
+    padding-bottom: 0.313em;
+    font-size: 15px;
+    margin-left: -50px;
+  }
+
+  .content {
+    display: none;
+  }
+
+  .contact-section {
+    background: url('images/desk-contact-background.svg') top right no-repeat, #6070ff;
+    border-top-left-radius: 100px;
+    margin-top: -80px;
+    height: 846px;
+  }
+
+  .contact-desk {
+    margin-top: 50px;
+  }
+
+  .contact-text {
+    width: 35%;
+    margin-left: 35%;
+  }
+
+  .form-display {
+    width: 40%;
+    margin-left: 40%;
+  }
+
+  input,
+  textarea {
+    border-radius: 0;
+  }
+
+  .contact-button {
+    margin-left: 90px;
+  }
 }
