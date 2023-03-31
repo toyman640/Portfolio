@@ -458,6 +458,20 @@ input {
     font-family: 'Poppins', sans-serif;
     width: 35%;
     align-items: center;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 35%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 35%;
+    }
   }
 
   .intro-text {
