@@ -458,6 +458,20 @@ input {
     font-family: 'Poppins', sans-serif;
     width: 35%;
     align-items: center;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 35%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 35%;
+    }
   }
 
   .intro-text {
@@ -558,6 +572,25 @@ input {
     color: #6070ff;
     font-size: 12px;
     line-height: 16px;
+  }
+
+  .desk-project-link::after {
+    content: '';
+    position: relative;
+    width: 0;
+    height: 3px;
+    display: block;
+    margin-top: 0;
+    right: 0;
+    background: #344563;
+    transition: width 0.2s ease;
+    -webkit-transition: width 0.2s ease;
+  }
+
+  .desk-project-link:hover::after {
+    width: 100%;
+    left: 0;
+    background: #344563;
   }
 
   .desk-see-proj {
