@@ -560,6 +560,19 @@ input {
     line-height: 16px;
   }
 
+  .desk-project-link::after {
+    content: '';
+    position: relative;
+    width: 0; height: 3px;
+    display: block;
+    margin-top: 0;
+    right: 0;
+    background: #344563;
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
+  }
+
+
   .desk-see-proj {
     border: 0.063em solid #6070ff;
     border-radius: 1em;
