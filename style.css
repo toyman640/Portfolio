@@ -467,7 +467,7 @@ input {
       margin-left: 100%;
       width: 35%;
     }
-  
+
     to {
       margin-left: 0%;
       width: 35%;
@@ -577,15 +577,21 @@ input {
   .desk-project-link::after {
     content: '';
     position: relative;
-    width: 0; height: 3px;
+    width: 0;
+    height: 3px;
     display: block;
     margin-top: 0;
     right: 0;
     background: #344563;
-    transition: width .2s ease;
-    -webkit-transition: width .2s ease;
+    transition: width 0.2s ease;
+    -webkit-transition: width 0.2s ease;
   }
 
+  .desk-project-link:hover::after {
+    width: 100%;
+    left: 0;
+    background: #344563;
+  }
 
   .desk-see-proj {
     border: 0.063em solid #6070ff;
