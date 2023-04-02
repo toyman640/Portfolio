@@ -16,16 +16,17 @@ body {
   display: none;
 }
 
-.flex-row {
+.flex-row-m {
   display: flex;
 }
 
-.flex-column {
+.flex-column-m {
   display: flex;
   flex-direction: column;
 }
 
 .header {
+  display: flex;
   justify-content: space-between;
 }
 
@@ -287,6 +288,7 @@ button {
 
 .content {
   margin-top: 35px;
+  width: 75%;
 }
 
 .contact-head {
@@ -388,6 +390,14 @@ input {
 }
 
 .desk-works {
+  display: none;
+}
+
+.contact-desk {
+  display: none;
+}
+
+.desk-about {
   display: none;
 }
 
@@ -623,6 +633,7 @@ input {
   }
 
   .desk-about {
+    display: block;
     background: #fff;
     border-top-right-radius: 100px;
     margin-top: 150px;
@@ -696,7 +707,7 @@ input {
     margin-left: -50px;
   }
 
-  .content {
+  .content-form {
     display: none;
   }
 
@@ -708,6 +719,7 @@ input {
   }
 
   .contact-desk {
+    display: block;
     margin-top: 50px;
   }
 
