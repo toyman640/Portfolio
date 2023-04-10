@@ -53,17 +53,13 @@ body {
   list-style: none;
   padding-left: 0;
   z-index: 1;
-
 }
 
 .rogue ul {
   list-style: none;
   width: 80%;
   margin-top: 80px;
-  
 }
-
-
 
 .blend-mode {
   filter: blur(8px);
@@ -98,6 +94,7 @@ body {
 #mobile-menu {
   position: absolute;
 }
+
 .intro {
   font-family: 'Poppins', sans-serif;
   justify-content: center;
