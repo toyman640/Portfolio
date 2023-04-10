@@ -1,8 +1,7 @@
 let ham = document.querySelector('#ham-btn');
-let content = document.querySelector('.blend-mode');
+let content = document.querySelector('.first-section');
 ham.addEventListener('click', function(event) {
-    document.querySelector('.blend-mode').classList.toggle
-    ham.classList.toggle(content);
+    content.classList.toggle('blend-mode')
     console.log('click');
 })
 
