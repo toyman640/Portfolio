@@ -24,7 +24,7 @@
 
 # :book: Hello microverse project <a name="about-project"></a>
 
-**Hello microverse project** is a simple HTML and CSS pages with linters integrated.
+**Hello microverse project** is a portfolio project built with HTML, CSS AND JAVASCRIPT.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -35,6 +35,7 @@
   <ul>
     <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">HTML5</a></li>
     <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics">CSS3</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">JAVASCRIPT</a></li>
   </ul>
 </details>
 
@@ -51,7 +52,6 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
 
 - [Live Demo Link](https://toyman640.github.io/Portfolio/)
 
