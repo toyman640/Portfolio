@@ -80,6 +80,11 @@ body {
   z-index: 1;
 }
 
+.ham-li a {
+  text-decoration: none;
+  color: #fff;
+}
+
 #close_button {
   border: none;
   background-color: inherit;
