@@ -63,9 +63,7 @@ body {
   
 }
 
-.invisible {
-  display: none;
-}
+
 
 .blend-mode {
   filter: blur(8px);
@@ -794,4 +792,8 @@ input {
   .contact-button {
     margin-left: 90px;
   }
+}
+
+.invisible {
+  display: none;
 }
