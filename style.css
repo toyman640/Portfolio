@@ -63,6 +63,10 @@ body {
   
 }
 
+.invisible {
+  display: none;
+}
+
 .blend-mode {
   filter: blur(8px);
 }
@@ -76,9 +80,12 @@ body {
   font-family: 'Poppins', sans-serif;
   margin-bottom: 8px;
   z-index: 1;
-  
 }
 
+#close_button {
+  border: none;
+  background-color: inherit;
+}
 
 #close {
   justify-content: end;
