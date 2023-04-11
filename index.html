@@ -11,15 +11,26 @@
     </title>
   </head>
   <body>
+    <div class="rogue invisible">
+        <ul class="flex-column-m" >
+            <li class="ham-li" id="close"><button id="close_button"><img src="images/Icon-Cancel.svg" alt=""></button></li>
+            <li class="ham-li"><a href="#second-section">Portfolio</a> </li>
+            <li class="ham-li"><a href="#third-section">About</a></li>
+            <li class="ham-li"><a href="#contact-section">Contact</a></li>
+        </ul>
+    </div>
+    
     <section class="first-section">
+       
       <header class="header flex-row-m">
         <a class="logo" href="http://">My Logo</a>
         <nav class="nav-menu">
-          <img
+          <a href="#" id="ham-btn"><img
             class="ham"
             src="images/hamburger.svg"
             alt="hamburger icon for mobile menu-drop-down"
-            srcset="" />
+            srcset="" /></a>
+            
           <div>
             <ul class="desk-menu flex-row">
               <li class="item-1">Portfolio</li>
@@ -72,7 +83,7 @@
         </div>
       </div>
     </section>
-    <section class="second-section">
+    <section class="second-section toggle-section" id="second-section">
       <div class="item works-1">
         <div class="card-content">
           <img src="images/works-1.svg" alt="template-image" srcset="" />
@@ -470,7 +481,7 @@
           alt="" />
       </div>
     </section>
-    <section class="third-section">
+    <section class="third-section toggle-section" id="third-section">
       <div class="content">
         <p class="about">About Myself</p>
         <p class="about-info">
@@ -653,7 +664,7 @@
         </div>
       </div>
     </section>
-    <section class="contact-section flex-column">
+    <section class="contact-section flex-column toggle-section" id="contact-section">
       <div class="content-form">
         <h3 class="contact-head">Contact me</h3>
         <p class="contact-text">
@@ -729,4 +740,5 @@
       </div>
     </section>
   </body>
+  <script src="script.js"></script>
 </html>
