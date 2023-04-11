@@ -72,7 +72,7 @@ body {
   line-height: 44px;
   color: #fff;
   font-family: 'Poppins', sans-serif;
-  margin-bottom: 8px;
+  margin-bottom: 28px;
   z-index: 1;
 }
 
@@ -99,7 +99,7 @@ body {
   font-family: 'Poppins', sans-serif;
   justify-content: center;
   padding-top: 70px;
-  background: url('images/header-shapes.svg');
+  background: url('images/header-shapes.svg') no-repeat;
 }
 
 .title {
