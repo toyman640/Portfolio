@@ -69,7 +69,6 @@ body {
   filter: blur(8px);
 }
 
-
 .ham-li {
   display: flex;
   font-weight: 600;
@@ -144,15 +143,15 @@ body {
 
 .pop {
   transform: translate(20%, 20%, 20%, 20%);
-  box-shadow: 5px 5px 5px #999999;
+  box-shadow: 5px 5px 5px #999;
   position: absolute;
   margin-left: 30px;
-  margin-top: -600px;
+  margin-top: -590px;
 }
 
 .pop-close {
-  float: right;
-  margin-right: 30px;
+  position: absolute;
+  margin-left: 80%;
 }
 
 .see-proj-pop {
@@ -162,6 +161,12 @@ body {
   margin-top: 20px;
   margin-bottom: 30px;
   margin-left: 5px;
+}
+
+.pop-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #344563;
 }
 
 .socials {
@@ -831,7 +836,6 @@ input {
 .invisible {
   display: none;
 }
-
 
 .invisible-pop {
   display: none;
