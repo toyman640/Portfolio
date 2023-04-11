@@ -25,3 +25,17 @@ for (let j = 0; j < listItems.length; j += 1) {
   hamLinks();
   listItems[j].addEventListener('click', hamLinks);
 }
+
+
+const popButton = document.querySelector('#see-project');
+const pop = document.querySelector('#work-1');
+
+function popUp() {
+  content.classList.toggle('blend-mode');
+  pop.classList.toggle('invisible-pop');
+  for (let i = 0; i < restOfPage.length; i += 1) {
+    restOfPage[i].classList.toggle('invisible-pop');
+  }
+}
+
+popButton.addEventListener('click', popUp)

@@ -65,6 +65,11 @@ body {
   filter: blur(8px);
 }
 
+.blend-mode-pop {
+  filter: blur(8px);
+}
+
+
 .ham-li {
   display: flex;
   font-weight: 600;
@@ -135,6 +140,28 @@ body {
   margin-left: 6%;
   margin-top: 10px;
   margin-bottom: 0;
+}
+
+.pop {
+  transform: translate(20%, 20%, 20%, 20%);
+  box-shadow: 5px 5px 5px #999999;
+  position: absolute;
+  margin-left: 30px;
+  margin-top: -600px;
+}
+
+.pop-close {
+  float: right;
+  margin-right: 30px;
+}
+
+.see-proj-pop {
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding: 12px 22px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 5px;
 }
 
 .socials {
@@ -618,6 +645,11 @@ input {
     margin-bottom: 55px;
   }
 
+  .desk-pop {
+    background: #fff;
+    border-radius: 16px;
+  }
+
   .desk-stacks li {
     margin-left: -40px;
   }
@@ -797,5 +829,10 @@ input {
 }
 
 .invisible {
+  display: none;
+}
+
+
+.invisible-pop {
   display: none;
 }
