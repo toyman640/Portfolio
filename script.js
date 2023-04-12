@@ -263,15 +263,11 @@ const divMessage = document.querySelector('.div-msg');
 
 function mailChecker(event) {
   const mailInfo = mail.value;
-  if (mailInfo === mailInfo.toLowerCase()) {
-
-  }
-  else {
-    divMessage.classList.remove('invisible')
+  if (mailInfo !== mailInfo.toLowerCase()) {
+    divMessage.classList.remove('invisible');
     message.innerHTML = 'Please, use lower case for email input';
     event.preventDefault();
   }
-
 }
 
 formButton.addEventListener('click', mailChecker);
@@ -283,19 +279,11 @@ const divMessageDesk = document.querySelector('.desk-form-msg');
 
 function mailCheckerDesk(ev) {
   const mailInfoDesk = mailDesk.value;
-  if (mailInfoDesk === mailInfoDesk.toLowerCase()) {
-
-  }
-  else {
-    divMessageDesk.classList.remove('desk-content-gone')
+  if (mailInfoDesk !== mailInfoDesk.toLowerCase()) {
+    divMessageDesk.classList.remove('desk-content-gone');
     messageDesk.innerHTML = 'Please, use lower case for email input';
     ev.preventDefault();
   }
-
 }
 
 formButtonDesk.addEventListener('click', mailCheckerDesk);
-
-
-
-
