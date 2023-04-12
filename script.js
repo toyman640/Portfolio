@@ -138,3 +138,121 @@ function popCloseButton() {
 }
 
 popClose.addEventListener('click', popCloseButton);
+
+// DESKTOP POPUP CODE
+
+const deskPop1 = document.querySelector('#desk-btn-1');
+const deskPop2 = document.querySelector('#desk-btn-2');
+const deskPop3 = document.querySelector('#desk-btn-3');
+const deskPop4 = document.querySelector('#desk-btn-4');
+const restPage = document.querySelectorAll('.for-desktop');
+const deskPop = document.querySelector('.desk-pop');
+const popContent = document.querySelector('.pop-content');
+
+const deskObject1 = {
+  first: {
+    title0: 'Tonic',
+    info0: ['CANOPY', 'Back End Dev', '2015'],
+    image0: 'images/works-img-1.png',
+  },
+  second: {
+    titleA: 'Multi-Post Stories',
+    infoA: ['FACEBOOK', 'Full Stack Dev', '2015'],
+    imageA: 'images/works-img-2.svg',
+  },
+  third: {
+    titleB: 'Facebook 360',
+    infoB: ['FACEBOOK', 'Full Stack Dev', '2018'],
+    imageB: 'images/works-img-3.svg',
+  },
+  fourth: {
+    titleC: 'Uber Navigation',
+    infoC: ['Uber', 'Lead Developer', '2015'],
+    imageC: 'images/works-img-4.svg',
+  },
+};
+
+const deskTitle1 = deskObject1.first.title0;
+const deskinfoA = deskObject1.first.info0[0];
+const deskinfoB = deskObject1.first.info0[1];
+const deskinfoC = deskObject1.first.info0[2];
+const deskImage1 = deskObject1.first.image0;
+
+function deskToggle() {
+  content.classList.toggle('blend-desk-pop1');
+  deskPop.classList.toggle('desk-content-gone');
+  for (let c = 0; c < restPage.length; c += 1) {
+    restPage[c].classList.toggle('desk-content-gone');
+  }
+}
+
+function oneButton() {
+  popContent.children[0].innerHTML = deskTitle1;
+  popContent.children[2].children[0].innerHTML = deskinfoA;
+  popContent.children[2].children[2].innerHTML = deskinfoB;
+  popContent.children[2].children[4].innerHTML = deskinfoC;
+  popContent.children[3].src = deskImage1
+  deskToggle();
+}
+
+deskPop1.addEventListener('click', oneButton);
+
+const deskTitle2 = deskObject1.second.titleA;
+const deskinfoD = deskObject1.second.infoA[0];
+const deskinfoE = deskObject1.second.infoA[1];
+const deskinfoF = deskObject1.second.infoA[2];
+const deskImage2 = deskObject1.second.imageA;
+
+function twoButton() {
+  popContent.children[0].innerHTML = deskTitle2;
+  popContent.children[2].children[0].innerHTML = deskinfoD;
+  popContent.children[2].children[2].innerHTML = deskinfoE;
+  popContent.children[2].children[4].innerHTML = deskinfoF;
+  popContent.children[3].src = deskImage2
+  deskToggle();
+}
+
+deskPop2.addEventListener('click', twoButton);
+
+const deskTitle3 = deskObject1.third.titleB;
+const deskinfoG = deskObject1.third.infoB[0];
+const deskinfoH = deskObject1.third.infoB[1];
+const deskinfoI = deskObject1.third.infoB[2];
+const deskImage3 = deskObject1.third.imageB;
+
+function threeButton() {
+  popContent.children[0].innerHTML = deskTitle3;
+  popContent.children[2].children[0].innerHTML = deskinfoG;
+  popContent.children[2].children[2].innerHTML = deskinfoH;
+  popContent.children[2].children[4].innerHTML = deskinfoI;
+  popContent.children[3].src = deskImage3;
+  deskToggle();
+}
+
+deskPop3.addEventListener('click', threeButton);
+
+const deskTitle4 = deskObject1.fourth.titleC;
+const deskinfoJ = deskObject1.fourth.infoC[0];
+const deskinfoK = deskObject1.fourth.infoC[1];
+const deskinfoL = deskObject1.fourth.infoC[2];
+const deskImage4 = deskObject1.fourth.imageC;
+
+function fourButton() {
+  popContent.children[0].innerHTML = deskTitle4;
+  popContent.children[2].children[0].innerHTML = deskinfoJ;
+  popContent.children[2].children[2].innerHTML = deskinfoK;
+  popContent.children[2].children[4].innerHTML = deskinfoL;
+  popContent.children[3].src = deskImage4
+  deskToggle();
+}
+
+deskPop4.addEventListener('click', fourButton);
+
+const deskPopClose = document.querySelector('#desk-pop-close');
+
+function deskCloseButton() {
+  deskToggle();
+}
+
+deskPopClose.addEventListener('click', deskCloseButton);
+
