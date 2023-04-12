@@ -151,7 +151,8 @@ body {
 
 .pop-close {
   position: absolute;
-  margin-left: 80%;
+  margin-left: 90%;
+  margin-top: 30px;
 }
 
 .see-proj-pop {
@@ -483,6 +484,10 @@ input {
 }
 
 .desk-about {
+  display: none;
+}
+
+.desk-pop {
   display: none;
 }
 
@@ -828,6 +833,7 @@ input {
   }
 
   .desk-pop {
+    display: block;
     position: absolute;
     background: #fff;
     border-radius: 16px;
@@ -906,7 +912,7 @@ input {
     margin-left: -40px;
     margin-top: -30px;
     justify-content: space-between;
-    width: 19%;
+    width: 25%;
   }
 
   .rest-li {
