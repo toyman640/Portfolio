@@ -836,7 +836,7 @@ input {
     margin-top: -850px;
   }
 
-  .pop-content { 
+  .pop-content {
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -891,7 +891,7 @@ input {
 
   .desk-content-gone {
     display: none;
-  } 
+  }
 
   .pop-title {
     font-family: 'Poppins', sans-serif;

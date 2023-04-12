@@ -191,7 +191,7 @@ function oneButton() {
   popContent.children[2].children[0].innerHTML = deskinfoA;
   popContent.children[2].children[2].innerHTML = deskinfoB;
   popContent.children[2].children[4].innerHTML = deskinfoC;
-  popContent.children[3].src = deskImage1
+  popContent.children[3].src = deskImage1;
   deskToggle();
 }
 
@@ -208,7 +208,7 @@ function twoButton() {
   popContent.children[2].children[0].innerHTML = deskinfoD;
   popContent.children[2].children[2].innerHTML = deskinfoE;
   popContent.children[2].children[4].innerHTML = deskinfoF;
-  popContent.children[3].src = deskImage2
+  popContent.children[3].src = deskImage2;
   deskToggle();
 }
 
@@ -242,7 +242,7 @@ function fourButton() {
   popContent.children[2].children[0].innerHTML = deskinfoJ;
   popContent.children[2].children[2].innerHTML = deskinfoK;
   popContent.children[2].children[4].innerHTML = deskinfoL;
-  popContent.children[3].src = deskImage4
+  popContent.children[3].src = deskImage4;
   deskToggle();
 }
 
@@ -255,4 +255,3 @@ function deskCloseButton() {
 }
 
 deskPopClose.addEventListener('click', deskCloseButton);
-
