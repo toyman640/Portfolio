@@ -831,7 +831,7 @@ input {
   }
 
   .form-display {
-    width: 40%;
+    width: 30%;
     margin-left: 40%;
   }
 
@@ -931,6 +931,18 @@ input {
     font-family: 'Poppins', sans-serif;
     color: #7a869a;
     font-weight: 500;
+  }
+
+  .desk-validation-messg {
+    color: #fff;
+    background: rgb(232, 29, 29);
+    padding: 8px;
+    box-shadow: 5px 5px 5px #cf5252;
+    margin-left: 220px;
+    margin-top: -2px;
+    width: 40%;
+    text-align: center;
+    border-radius: 8px;
   }
 }
 
