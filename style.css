@@ -934,10 +934,7 @@ input {
   }
 }
 
-.invisible {
-  display: none;
-}
-
+.invisible, 
 .invisible-pop {
   display: none;
 }
