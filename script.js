@@ -255,3 +255,26 @@ function deskCloseButton() {
 }
 
 deskPopClose.addEventListener('click', deskCloseButton);
+
+const mail = document.querySelector('#email1');
+const message = document.querySelector('.validation-messg');
+const formButton = document.querySelector('#form-sub');
+
+
+
+
+function mailChecker() {
+  const mailInfo = mail.value;
+  if (mailInfo === mailInfo.toLowerCase()) {
+    console.log(mailInfo);
+  }
+  else {
+    message.innerHTML = 'i am the meassage';
+    console.log(mailInfo);
+    click.preventDefault();
+  }
+
+}
+
+formButton.addEventListener('click', mailChecker);
+
