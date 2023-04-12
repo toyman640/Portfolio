@@ -491,6 +491,18 @@ input {
   display: none;
 }
 
+.validation-messg {
+  color: #fff;
+  background: rgb(232, 29, 29);
+  padding: 8px;
+  box-shadow: 5px 5px 5px #cf5252;
+  margin-left: 130px;
+  margin-top: -2px;
+  width: 40%;
+  text-align: center;
+  border-radius: 8px;
+}
+
 @media only screen and (min-width: 768px) {
   body {
     margin: 0;
@@ -819,7 +831,7 @@ input {
   }
 
   .form-display {
-    width: 40%;
+    width: 30%;
     margin-left: 40%;
   }
 
@@ -920,12 +932,21 @@ input {
     color: #7a869a;
     font-weight: 500;
   }
+
+  .desk-validation-messg {
+    color: #fff;
+    background: rgb(232, 29, 29);
+    padding: 8px;
+    box-shadow: 5px 5px 5px #cf5252;
+    margin-left: 220px;
+    margin-top: -2px;
+    width: 40%;
+    text-align: center;
+    border-radius: 8px;
+  }
 }
 
-.invisible {
-  display: none;
-}
-
+.invisible,
 .invisible-pop {
   display: none;
 }

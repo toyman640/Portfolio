@@ -791,7 +791,8 @@
             <input
               type="email"
               name="email"
-              id="email"
+              id="email1"
+              class="mobile-mail"
               placeholder="loremipsum@gmail.com"
               required />
             <textarea
@@ -803,9 +804,10 @@
               placeholder="Write your message here..."
               required></textarea>
           </div>
-          <button class="contact-button" type="submit">
+          <button class="contact-button" id="form-sub" type="submit">
             <span class="contact-link">Get in touch</span>
           </button>
+          <div class="div-msg invisible"><p class="validation-messg"></p></div>
         </form>
       </div>
       <div class="contact-desk">
@@ -841,9 +843,10 @@
               placeholder="Write your message here..."
               required></textarea>
           </div>
-          <button class="contact-button" type="submit">
+          <button class="contact-button" id="desk-form-button" type="submit">
             <span class="contact-link">Get in touch</span>
           </button>
+          <div class="desk-form-msg desk-content-gone"><p class="desk-validation-messg"></p></div>
         </form>
       </div>
     </section>
