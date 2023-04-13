@@ -292,8 +292,6 @@ const nameInput = document.querySelector('#name1');
 const emailInput = document.querySelector('#email1');
 const msgInput = document.querySelector('#message1');
 
-console.log(localStorage)
-
 if (localStorage.length !== 0) {
   nameInput.value = JSON.parse(localStorage.getItem('obj')).name;
   emailInput.value = JSON.parse(localStorage.getItem('obj')).email;
@@ -307,41 +305,3 @@ function populateStorage() {
 nameInput.onchange = populateStorage;
 emailInput.onchange = populateStorage;
 msgInput.onchange = populateStorage;
-
-
-// const formInput = document.querySelector('#mobile-form');
-
-// function getInput(halt) {
-//   halt.preventDefault()
-//   const nameM = document.querySelector('#name1').value;
-//   const emailM = document.querySelector('#email1').value;
-//   const messageM = document.querySelector('#message1').value;
-
-//   const formDataInput = {
-//     nameM,
-//     emailM,
-//     messageM
-//   };
-
-//   localStorage.setItem('formDataInput', JSON.stringify(formDataInput));
-
-//   this.submit()
-//   console.log(formDataInput);
-// }
-
-// formInput.addEventListener('submit', getInput)
-
-// function fillFields() {
-//   const formDataInput = JSON.parse(localStorage.getItem('formDataInput'))
-//   if (formDataInput) {
-//     document.querySelector('#name1').value = formDataInput.nameM;
-//     console.log(document.querySelector('#name1').value = formDataInput.nameM)
-//     document.querySelector('#email1').value = formDataInput.emailM;
-//     document.querySelector('#message1').value = formDataInput.messageM;
-//   }
-//   else{
-//     console.log('no data')
-//   }
-// };
-
-// window.addEventListener('load', fillFields)
