@@ -277,7 +277,7 @@ const messageDesk = document.querySelector('.desk-validation-messg');
 const formButtonDesk = document.querySelector('#desk-form-button');
 const divMessageDesk = document.querySelector('.desk-form-msg');
 
-function mailCheckerDesk(ev) {
+function mailCheckerDesk(event) {
   const mailInfoDesk = mailDesk.value;
   if (mailInfoDesk !== mailInfoDesk.toLowerCase()) {
     divMessageDesk.classList.remove('desk-content-gone');
@@ -292,7 +292,7 @@ const nameInput = document.querySelector('#name1');
 const emailInput = document.querySelector('#email1');
 const msgInput = document.querySelector('#message1');
 
-if (localStorage.length !== 0) {
+if (localStorage.length === 0) {
   nameInput.value = JSON.parse(localStorage.getItem('obj')).name;
   emailInput.value = JSON.parse(localStorage.getItem('obj')).email;
   msgInput.value = JSON.parse(localStorage.getItem('obj')).msg;
