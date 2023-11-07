@@ -38,7 +38,6 @@ body {
   padding-top: 18%;
   width: 90%;
   margin-left: 5%;
- 
 }
 
 .greet {
@@ -71,13 +70,9 @@ body {
   display: flex;
   width: 50%;
   justify-content: space-between;
-} 
-
-
+}
 
 @media (min-width: 768px) {
-  
-
   .hamburger {
     display: none;
   }
@@ -117,10 +112,10 @@ body {
   .greet {
     font-size: 3em;
     font-weight: 800;
-    letter-spacing: 0,37px;
+    letter-spacing: 0, 37px;
     color: #091e42;
     line-height: 60px;
-    margin-bottom: 0
+    margin-bottom: 0;
   }
 
   .foreword {
@@ -141,5 +136,4 @@ body {
     width: 20%;
     justify-content: space-between;
   }
- 
 }
