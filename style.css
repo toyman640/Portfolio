@@ -24,14 +24,13 @@ body {
 
 .introduction {
   background: url("images/header-shapes-mobile.svg");
-  background-size: contain;
+  background-size: cover;
   width: 100%;
   margin: 0;
   padding: 0;
   background-repeat: no-repeat;
   height: 100vh;
   border-bottom-left-radius: 32px;
-  border: 1px solid red;
 }
 
 .content-section {
@@ -135,5 +134,89 @@ body {
     display: flex;
     width: 20%;
     justify-content: space-between;
+  }
+
+  .works {
+    background-color: #dfe1e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-card {
+    display: flex;
+    gap: 0;
+    margin: 0;
+    background-color: #fff;
+    margin-top: 10%;
+    border-radius: 24px;
+    height: 31em;
+    width: 65%;
+  }
+
+
+  .card-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #091e42;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .card-experience {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+    width: 50%;
+    margin-top: 0;
+  }
+
+  .card-experience li {
+    color: #6b778c;
+    font-size: 1.125em;
+    font-weight: 500;
+  }
+
+  .exp-first {
+    color: #344563 !important;
+    font-size: 1.125em;
+  }
+
+  .work-desc {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #344563;
+    width: 75%;
+
+  }
+
+  .stacks button {
+    background-color: #ebebff;
+    color: #6070ff;
+    padding: 0.25em 0.75em ;
+    border-radius: 8px;
+    font-size: 1em;
+    border: none;
+  }
+
+  .see-project {
+    font-size: 1.063em;
+    color: #396df2;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    padding: 0.75em;
+    font-weight: 500;
+    margin-top: 8%;
+  }
+
+  .card-image {
+    height: 28em;
+    padding: 20px;
+  }
+
+  .card-content {
+    padding: 20px;
   }
 }
