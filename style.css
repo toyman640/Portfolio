@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Pacifico&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Pacifico&family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
+  background-color: #dfe1e6;
 }
 
 .logo {
@@ -29,8 +30,7 @@ body {
   margin: 0;
   padding: 0;
   background-repeat: no-repeat;
-  height: 100vh;
-  border-bottom-left-radius: 32px;
+  border-bottom-left-radius: 35px;
 }
 
 .content-section {
@@ -40,9 +40,8 @@ body {
 }
 
 .greet {
-  font-size: 2.5em;
-  font-weight: 700;
-  line-height: 52px;
+  font-size: 2.1em;
+  font-weight: 900;
   color: #172b4d;
   width: 90%;
   margin-bottom: 0;
@@ -50,7 +49,7 @@ body {
 }
 
 .foreword {
-  font-size: 1em;
+  font-size: 0.8em;
   font-weight: 400;
   line-height: 1.5em;
   color: #344563;
@@ -69,6 +68,7 @@ body {
   display: flex;
   width: 50%;
   justify-content: space-between;
+  padding-bottom: 100px;
 }
 
 .works {
@@ -84,7 +84,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fff;
+  background-color: #faf9f6;
 }
 
 .mobile-works-card {
@@ -156,6 +156,10 @@ body {
     display: none;
   }
 
+  .mobile-works {
+    display: none;
+  }
+
   .desk-menu {
     display: flex;
     list-style: none;
@@ -178,6 +182,12 @@ body {
     width: 90%;
     margin-left: 5%;
     height: 100vh;
+    border-bottom-left-radius: 32px;
+  }
+
+  .intro-cover {
+    border-bottom-left-radius: 80px;
+    background-color: #fff;
   }
 
   .content-section {
@@ -298,5 +308,78 @@ body {
 
   .card-content {
     padding: 20px;
+  }
+
+  .about-desk {
+    background-color: #fff;
+    margin-top: 20%;
+  }
+
+  .main-part {
+    display: flex;
+    width: 65%;
+    margin-left: 17.5%;
+    padding-top: 10%;
+  }
+  
+  .desk-first-about {
+    width: 50%;
+  }
+
+  .desk-second-about {
+    width: 50%;
+  }
+
+  .about-title {
+    font-size: 2.5em;
+    color: #091e42;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+
+  .about-word {
+    color: #344563;
+    font-size: 1em;
+    font-weight: 400;
+    width: 78%;
+    margin-top: 0;
+  }
+
+  .about-socials {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+  }
+
+  .resume-button {
+    margin-top: 5%;
+    border: 1px solid #6070ff;
+    color: #396df2;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1.063em;
+    font-weight: 500;
+  }
+
+  .about-stacks-desk {
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .about-lang-desk {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-left: 0;
+    font-size: 0.938em;
+    width: 70%;
+  }
+
+  .about-lang-desk li {
+    background-color: #f7f7f9;
+    width: 25%;
+    padding: 2%;
+    border-radius: 8px;
   }
 }
