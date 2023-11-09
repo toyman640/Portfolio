@@ -78,11 +78,6 @@ body {
 .mobile-works {
   display: flex;
   flex-direction: column;
-}
-
-.mobile-works {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   background-color: #faf9f6;
 }
@@ -180,7 +175,6 @@ body {
   display: flex;
   width: 60%;
   justify-content: space-between;
- 
 }
 
 .resume-button {
@@ -207,11 +201,12 @@ body {
   padding-left: 0;
   margin-top: 8%;
 }
+
 .desk-about-angle {
   float: right;
 }
 
-.about-lang-desk li{
+.about-lang-desk li {
   display: flex;
   background-color: #f7f7f9;
   font-weight: 500;
@@ -223,6 +218,7 @@ body {
 .lang-pic {
   height: 48px;
 }
+
 @media (min-width: 768px) {
   .hamburger {
     display: none;
@@ -316,7 +312,6 @@ body {
     width: 65%;
   }
 
-
   .card-title {
     font-size: 2.5em;
     font-weight: 700;
@@ -351,13 +346,12 @@ body {
     line-height: 1.5em;
     color: #344563;
     width: 75%;
-
   }
 
   .stacks button {
     background-color: #ebebff;
     color: #6070ff;
-    padding: 0.25em 0.75em ;
+    padding: 0.25em 0.75em;
     border-radius: 8px;
     font-size: 1em;
     border: none;
@@ -394,7 +388,7 @@ body {
     margin-left: 17.5%;
     padding-top: 10%;
   }
-  
+
   .desk-first-about {
     width: 50%;
   }
