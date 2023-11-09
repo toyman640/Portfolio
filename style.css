@@ -151,6 +151,78 @@ body {
   margin-top: 12%;
   margin-bottom: 6%;
 }
+
+.about-desk {
+  background-color: #fff;
+}
+
+.main-part {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.about-title {
+  color: #172b4d;
+  font-size: 2.3em;
+  font-weight: 700;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.about-word {
+  color: #344563;
+  font-size: 0.9em;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.about-socials {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+ 
+}
+
+.resume-button {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 5%;
+  border: 1px solid #6070ff;
+  color: #396df2;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 0.9em;
+  font-weight: 500;
+  background-color: #fff;
+}
+
+.about-stacks-desk {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.about-lang-desk {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 8%;
+}
+.desk-about-angle {
+  float: right;
+}
+
+.about-lang-desk li{
+  display: flex;
+  background-color: #f7f7f9;
+  font-weight: 500;
+  margin-top: 3%;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.lang-pic {
+  height: 48px;
+}
 @media (min-width: 768px) {
   .hamburger {
     display: none;
@@ -313,6 +385,7 @@ body {
   .about-desk {
     background-color: #fff;
     margin-top: 20%;
+    border-top-right-radius: 150px;
   }
 
   .main-part {
@@ -367,6 +440,10 @@ body {
     width: 100%;
   }
 
+  .about-stacks-desk li {
+    margin-bottom: 2%;
+  }
+
   .about-lang-desk {
     display: flex;
     list-style: none;
@@ -381,5 +458,13 @@ body {
     width: 25%;
     padding: 2%;
     border-radius: 8px;
+  }
+
+  .desk-about-angle {
+    float: right;
+  }
+
+  .separator {
+    width: 110%;
   }
 }
