@@ -1,11 +1,11 @@
 const ham = document.querySelector('#ham-btn');
-const content = document.querySelector('.first-section');
+const content = document.querySelector('.intro-cover');
 const menuList = document.querySelector('.rogue');
 let restOfPage = document.querySelectorAll('.toggle-section');
 
 function hamDisplay() {
   content.classList.toggle('blend-mode');
-  menuList.classList.toggle('invisible');
+  
   for (let i = 0; i < restOfPage.length; i += 1) {
     restOfPage[i].classList.toggle('invisible');
   }

@@ -6,6 +6,40 @@ body {
   background-color: #fff;
 }
 
+.ham-menu {
+  position: absolute;
+  list-style: none;
+  background-color: rgba(96, 112, 255, 0.9);
+  height: 100vh;
+  margin-top: 0;
+  width: 100%;
+  padding-top: 20%;
+}
+
+.ham-items li {
+  list-style: none;
+  margin-top: 9%;
+  font-size: 1.5em;
+}
+
+.ham-items li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.blend-mode {
+  backdrop-filter: blur(10px);
+}
+
+.keep {
+  display: none;
+}
+
+.pop-close {
+  float: right;
+  margin-right: 10%;
+}
+
 .logo {
   font-size: 1.125em;
   font-weight: 700;
@@ -271,6 +305,9 @@ input {
 }
 
 @media (min-width: 768px) {
+  .ham-menu {
+    display: none;
+  }
   .hamburger {
     display: none;
   }
