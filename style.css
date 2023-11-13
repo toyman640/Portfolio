@@ -311,9 +311,11 @@ input {
   .keep {
     display: none;
   }
+
   .ham-menu {
     display: none;
   }
+
   .hamburger {
     display: none;
   }

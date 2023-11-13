@@ -4,7 +4,6 @@ const content = document.querySelector('.intro-cover');
 const menuList = document.querySelector('.ham-menu');
 let restOfPage = document.querySelectorAll('.toggle-section');
 
-
 function hamDisplay() {
   content.classList.toggle('blend-mode');
   menuList.classList.toggle('keep');
@@ -13,8 +12,6 @@ function hamDisplay() {
   }
 }
 ham.addEventListener('click', hamDisplay);
-
-
 
 // function hamKeep() {
 //   content.classList.toggle('blend-mode');
@@ -26,8 +23,6 @@ ham.addEventListener('click', hamDisplay);
 // }
 
 hamClose.addEventListener('click', hamDisplay);
-
-
 
 const listItems = document.querySelectorAll('.ham-li');
 restOfPage = document.querySelectorAll('.toggle-section');
