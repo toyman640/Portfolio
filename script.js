@@ -1,16 +1,33 @@
 const ham = document.querySelector('#ham-btn');
+const hamClose = document.querySelector('#close-menu');
 const content = document.querySelector('.intro-cover');
-const menuList = document.querySelector('.rogue');
+const menuList = document.querySelector('.ham-menu');
 let restOfPage = document.querySelectorAll('.toggle-section');
+
 
 function hamDisplay() {
   content.classList.toggle('blend-mode');
-  
+  menuList.classList.toggle('keep');
   for (let i = 0; i < restOfPage.length; i += 1) {
-    restOfPage[i].classList.toggle('invisible');
+    restOfPage[i].classList.toggle('keep');
   }
 }
 ham.addEventListener('click', hamDisplay);
+
+
+
+// function hamKeep() {
+//   content.classList.toggle('blend-mode');
+//   menuList.classList.toggle('keep');
+//   for (let i = 0; i < restOfPage.length; i += 1) {
+//     restOfPage[i].classList.toggle('keep');
+//   }
+//   console.log('Close button clicked');
+// }
+
+hamClose.addEventListener('click', hamDisplay);
+
+
 
 const listItems = document.querySelectorAll('.ham-li');
 restOfPage = document.querySelectorAll('.toggle-section');

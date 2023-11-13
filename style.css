@@ -14,6 +14,7 @@ body {
   margin-top: 0;
   width: 100%;
   padding-top: 20%;
+  z-index: 1;
 }
 
 .ham-items li {
@@ -28,7 +29,7 @@ body {
 }
 
 .blend-mode {
-  backdrop-filter: blur(10px);
+  filter: blur(5px);
 }
 
 .keep {
@@ -38,6 +39,8 @@ body {
 .pop-close {
   float: right;
   margin-right: 10%;
+  background-color: inherit;
+  border: none;
 }
 
 .logo {
@@ -305,6 +308,9 @@ input {
 }
 
 @media (min-width: 768px) {
+  .keep {
+    display: none;
+  }
   .ham-menu {
     display: none;
   }
