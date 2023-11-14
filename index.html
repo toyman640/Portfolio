@@ -8,11 +8,13 @@
 </head>
 <body>
   <div class="ham-menu keep">
-    <img class="pop-close" src="images/Icon-Cancel.svg" alt="">
+    <button class="pop-close" id="close-menu">
+      <img src="images/Icon-Cancel.svg" alt="">
+    </button>
     <ul class="ham-items">
-      <li><a href="">Portfolio</a></li>
-      <li><a href="">About</a></li>
-      <li><a href="">Contact</a></li>
+      <li><a href="#into">Portfolio</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
   <section class="menu-section">
@@ -26,7 +28,7 @@
       </ul>
     </nav>
   </section>
-  <section class="intro-cover">
+  <section class="intro-cover" id="into">
     <div class="introduction">
 
       <div class="content-section">
@@ -144,7 +146,7 @@
       <img class="card-image" src="images/works-img-4.svg" alt="">
     </div>
   </section>
-  <section class="mobile-works">
+  <section class="mobile-works toggle-section">
     <div class="mobile-works-card">
       <img class="card-img-mobile" src="images/works-1.svg" alt="">
       <h2 class="mobile-card-title">Tonic</h2>
@@ -228,7 +230,7 @@
   </section>
 
   <section class="about-desk toggle-section">
-    <div class="main-part">
+    <div class="main-part" id="about">
       <div class="desk-first-about">
         <h3 class="about-title">About Myself</h3>
         <p class="about-word">
@@ -285,7 +287,7 @@
         </ul>
       </div>
     </div>
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
       <div class="contact-content-part">
         <h2 class="contact-title">Contact me</h2>
         <p class="contact-foreword">
