@@ -3,6 +3,7 @@ const hamClose = document.querySelector('#close-menu');
 const content = document.querySelector('.intro-cover');
 const menuList = document.querySelector('.ham-menu');
 let restOfPage = document.querySelectorAll('.toggle-section');
+const menuItems = document.querySelectorAll('.menu-item')
 
 function hamDisplay() {
   content.classList.toggle('blend-mode');
@@ -12,15 +13,10 @@ function hamDisplay() {
   }
 }
 ham.addEventListener('click', hamDisplay);
+menuItems.forEach(item => {
+  item.addEventListener('click', hamDisplay);
+});
 
-// function hamKeep() {
-//   content.classList.toggle('blend-mode');
-//   menuList.classList.toggle('keep');
-//   for (let i = 0; i < restOfPage.length; i += 1) {
-//     restOfPage[i].classList.toggle('keep');
-//   }
-//   console.log('Close button clicked');
-// }
 
 hamClose.addEventListener('click', hamDisplay);
 
