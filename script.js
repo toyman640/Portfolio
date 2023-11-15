@@ -3,7 +3,7 @@ const hamClose = document.querySelector('#close-menu');
 const content = document.querySelector('.intro-cover');
 const menuList = document.querySelector('.ham-menu');
 let restOfPage = document.querySelectorAll('.toggle-section');
-const menuItems = document.querySelectorAll('.menu-item')
+const menuItems = document.querySelectorAll('.menu-item');
 
 function hamDisplay() {
   content.classList.toggle('blend-mode');
@@ -13,10 +13,9 @@ function hamDisplay() {
   }
 }
 ham.addEventListener('click', hamDisplay);
-menuItems.forEach(item => {
+menuItems.forEach((item) => {
   item.addEventListener('click', hamDisplay);
 });
-
 
 hamClose.addEventListener('click', hamDisplay);
 
@@ -40,7 +39,7 @@ const popButton2 = document.querySelector('#button-3');
 const popButton3 = document.querySelector('#button-4');
 const pop = document.querySelector('.mobile-popup');
 const mainPart = document.querySelector('.main-pop');
-const mobileClosePop = document.querySelector('#close-mobile-pop')
+const mobileClosePop = document.querySelector('#close-mobile-pop');
 
 const cardObject1 = {
   one: {
@@ -67,7 +66,7 @@ const cardObject1 = {
 
 function handleBackground() {
   content.classList.toggle('blend-mode');
-  pop.classList.toggle('hide-pop')
+  pop.classList.toggle('hide-pop');
   for (let i = 0; i < restOfPage.length; i += 1) {
     restOfPage[i].classList.toggle('keep');
   }
@@ -89,7 +88,7 @@ function popUp() {
 }
 popButton.addEventListener('click', popUp);
 
-mobileClosePop.addEventListener('click', handleBackground)
+mobileClosePop.addEventListener('click', handleBackground);
 
 const mainTittle2 = cardObject1.two.title;
 const desk2Ul1 = cardObject1.two.info[0];
