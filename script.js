@@ -38,8 +38,8 @@ const popButton = document.querySelector('#button-1');
 const popButton1 = document.querySelector('#button-2');
 const popButton2 = document.querySelector('#button-3');
 const popButton3 = document.querySelector('#button-4');
-const pop = document.querySelector('#work-1');
-const mainPart = document.querySelector('.pop-main');
+const pop = document.querySelector('.mobile-popup');
+const mainPart = document.querySelector('.main-pop');
 
 const cardObject1 = {
   one: {
@@ -66,9 +66,9 @@ const cardObject1 = {
 
 function handleBackground() {
   content.classList.toggle('blend-mode');
-  pop.classList.toggle('invisible-pop');
+  pop.classList.toggle('hide-pop')
   for (let i = 0; i < restOfPage.length; i += 1) {
-    restOfPage[i].classList.toggle('invisible-pop');
+    restOfPage[i].classList.toggle('keep');
   }
 }
 
@@ -79,11 +79,11 @@ const deskUl3 = cardObject1.one.info[2];
 const deskimage1 = cardObject1.one.image;
 
 function popUp() {
-  mainPart.children[1].innerHTML = mainTittle;
-  mainPart.children[2].children[0].innerHTML = deskUl1;
-  mainPart.children[2].children[2].innerHTML = deskUl2;
-  mainPart.children[2].children[4].innerHTML = deskUl3;
-  mainPart.children[3].src = deskimage1;
+  mainPart.children[0].children[0].innerHTML = mainTittle;
+  mainPart.children[1].children[0].innerHTML = deskUl1;
+  mainPart.children[1].children[2].innerHTML = deskUl2;
+  mainPart.children[1].children[4].innerHTML = deskUl3;
+  mainPart.children[2].src = deskimage1;
   handleBackground();
 }
 popButton.addEventListener('click', popUp);

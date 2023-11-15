@@ -308,21 +308,35 @@ input {
 }
 
 .mobile-popup {
+  position: absolute;
   border-radius: 16px;
+  z-index: 1;
+  background-color: rgba(193, 199, 208, 0.5);
+  padding: 5%;
 }
 
 .hide-pop {
   display: none;
 }
 
+.pop-top-part {
+  display: flex;
+}
+
+.pop-close-mobile {
+  height: 10px;
+  margin-left: 60%;
+  margin-top: 15%;
+}
+
 .main-pop {
-  position: absolute;
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+  background-color: #fff;
   width: 90%;
-  margin-left: 5%;
+  margin-left: 2%;
   padding: 3%;
+  border-radius: 16px;
 }
 
 .mobile-pop-title {
