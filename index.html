@@ -12,18 +12,46 @@
       <img src="images/Icon-Cancel.svg" alt="">
     </button>
     <ul class="ham-items">
-      <li><a href="#intro">Portfolio</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a class="menu-item" href="#intro">Portfolio</a></li>
+      <li><a class="menu-item" href="#about">About</a></li>
+      <li><a class="menu-item"  href="#contact">Contact</a></li>
     </ul>
   </div>
+  <section class="mobile-popup hide-pop">
+    <div class="main-pop">
+      <div class="pop-top-part">
+        <h3 class="mobile-pop-title"></h3>
+        <img class="pop-close-mobile" id="close-mobile-pop" src="images/pop-close.svg" alt="">
+      </div>
+      <ul class="mobile-pop-exp">
+        <li></li>
+        <li><img src="images/Counter.svg" alt=""></li>
+        <li></li>
+        <li><img src="images/Counter.svg" alt=""></li>
+        <li></li>
+      </ul>
+      <img src="" alt="">
+      <p class="pop-proj-desc">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
+      </p>
+      <div class="mobile-pop-stacks">
+        <button class="pop-stacks">HTML</button>
+        <button class="pop-stacks">CSS</button>
+        <button class="pop-stacks">JavaScript</button>
+      </div>
+      <div class="mobile-pop-links">
+        <button class="pop-links">See live <img src="images/see-live-logo.svg" alt=""></button>
+        <button class="pop-links">See source <img src="images/github.svg" alt=""></button>
+      </div>
+    </div>
+  </section>
   <section class="menu-section">
     <nav class="navigation">
       <p class="logo">My Logo</p>
       <img class="hamburger" id="ham-btn" src="images/hamburger.svg" id="ham-btn" alt="" srcset="">
       <ul class="desk-menu">
-        <li><a href="#intro">Portfolio</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a  href="#intro">Portfolio</a></li>
+        <li ><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -55,7 +83,7 @@
       </div>
     </div>
   </section>
-  <section class="works toggle-section">
+  <section class="works">
     <div class="work-card">
       <img class="card-image" src="images/works-img-1.png" alt="">
       <div class="card-content">
@@ -146,8 +174,8 @@
       <img class="card-image" src="images/works-img-4.svg" alt="">
     </div>
   </section>
-  <section class="mobile-works toggle-section">
-    <div class="mobile-works-card">
+  <section class="mobile-works ">
+    <div class="mobile-works-card toggle-section">
       <img class="card-img-mobile" src="images/works-1.svg" alt="">
       <h2 class="mobile-card-title">Tonic</h2>
       <ul class="mobile-exp">
@@ -165,11 +193,11 @@
         <button class="mobile-stacks-button">CSS</button>
         <button class="mobile-stacks-button">JavaScript</button>
       </div>
-      <button class="see-proj-mobile">See project</button>
+      <button class="see-proj-mobile" id="button-1">See project</button>
     </div>
-    <div class="mobile-works-card">
-      <img class="card-img-mobile" src="images/works-1.svg" alt="">
-      <h2 class="mobile-card-title">Tonic</h2>
+    <div class="mobile-works-card toggle-section">
+      <img class="card-img-mobile" src="images/works-2.svg" alt="">
+      <h2 class="mobile-card-title">Multi-Post Stories</h2>
       <ul class="mobile-exp">
         <li class="current-exp">CANOPY</li>
         <li><img src="images/Counter.svg" alt=""></li>
@@ -185,10 +213,10 @@
         <button class="mobile-stacks-button">CSS</button>
         <button class="mobile-stacks-button">JavaScript</button>
       </div>
-      <button class="see-proj-mobile">See project</button>
+      <button class="see-proj-mobile" id="button-2">See project</button>
     </div>
-    <div class="mobile-works-card">
-      <img class="card-img-mobile" src="images/works-1.svg" alt="">
+    <div class="mobile-works-card toggle-section">
+      <img class="card-img-mobile" src="images/works-3.svg" alt="">
       <h2 class="mobile-card-title">Tonic</h2>
       <ul class="mobile-exp">
         <li class="current-exp">CANOPY</li>
@@ -205,11 +233,11 @@
         <button class="mobile-stacks-button">CSS</button>
         <button class="mobile-stacks-button">JavaScript</button>
       </div>
-      <button class="see-proj-mobile">See project</button>
+      <button class="see-proj-mobile" id="button-3">See project</button>
     </div>
-    <div class="mobile-works-card">
-      <img class="card-img-mobile" src="images/works-1.svg" alt="">
-      <h2 class="mobile-card-title">Tonic</h2>
+    <div class="mobile-works-card toggle-section">
+      <img class="card-img-mobile" src="images/works-4.svg" alt="">
+      <h2 class="mobile-card-title">Multi-Post StoriesTonic</h2>
       <ul class="mobile-exp">
         <li class="current-exp">CANOPY</li>
         <li><img src="images/Counter.svg" alt=""></li>
@@ -225,7 +253,7 @@
         <button class="mobile-stacks-button">CSS</button>
         <button class="mobile-stacks-button">JavaScript</button>
       </div>
-      <button class="see-proj-mobile">See project</button>
+      <button class="see-proj-mobile" id="button-4">See project</button>
     </div>
   </section>
 
@@ -302,6 +330,7 @@
       </div>
     </section>
   </section>
+
 
 
   <script src="script.js"></script>
