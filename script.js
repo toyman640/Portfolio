@@ -40,6 +40,7 @@ const popButton2 = document.querySelector('#button-3');
 const popButton3 = document.querySelector('#button-4');
 const pop = document.querySelector('.mobile-popup');
 const mainPart = document.querySelector('.main-pop');
+const mobileClosePop = document.querySelector('#close-mobile-pop')
 
 const cardObject1 = {
   one: {
@@ -88,6 +89,8 @@ function popUp() {
 }
 popButton.addEventListener('click', popUp);
 
+mobileClosePop.addEventListener('click', handleBackground)
+
 const mainTittle2 = cardObject1.two.title;
 const desk2Ul1 = cardObject1.two.info[0];
 const desk2Ul2 = cardObject1.two.info[1];
@@ -96,11 +99,11 @@ const desk2image1 = cardObject1.two.image;
 
 function popUp1() {
   handleBackground();
-  mainPart.children[1].innerHTML = mainTittle2;
-  mainPart.children[2].children[0].innerHTML = desk2Ul1;
-  mainPart.children[2].children[2].innerHTML = desk2Ul2;
-  mainPart.children[2].children[4].innerHTML = desk2Ul3;
-  mainPart.children[3].src = desk2image1;
+  mainPart.children[0].children[0].innerHTML = mainTittle2;
+  mainPart.children[1].children[0].innerHTML = desk2Ul1;
+  mainPart.children[1].children[2].innerHTML = desk2Ul2;
+  mainPart.children[1].children[4].innerHTML = desk2Ul3;
+  mainPart.children[2].src = desk2image1;
 }
 
 popButton1.addEventListener('click', popUp1);
@@ -113,11 +116,11 @@ const desk3image1 = cardObject1.three.image;
 
 function popUp2() {
   handleBackground();
-  mainPart.children[1].innerHTML = mainTittle3;
-  mainPart.children[2].children[0].innerHTML = desk3Ul1;
-  mainPart.children[2].children[2].innerHTML = desk3Ul2;
-  mainPart.children[2].children[4].innerHTML = desk3Ul3;
-  mainPart.children[3].src = desk3image1;
+  mainPart.children[0].children[0].innerHTML = mainTittle3;
+  mainPart.children[1].children[0].innerHTML = desk3Ul1;
+  mainPart.children[1].children[2].innerHTML = desk3Ul2;
+  mainPart.children[1].children[4].innerHTML = desk3Ul3;
+  mainPart.children[2].src = desk3image1;
 }
 
 popButton2.addEventListener('click', popUp2);
@@ -130,11 +133,11 @@ const desk4image1 = cardObject1.four.image;
 
 function popUp3() {
   handleBackground();
-  mainPart.children[1].innerHTML = mainTittle4;
-  mainPart.children[2].children[0].innerHTML = desk4Ul1;
-  mainPart.children[2].children[2].innerHTML = desk4Ul2;
-  mainPart.children[2].children[4].innerHTML = desk4Ul3;
-  mainPart.children[3].src = desk4image1;
+  mainPart.children[0].children[0].innerHTML = mainTittle4;
+  mainPart.children[1].children[0].innerHTML = desk4Ul1;
+  mainPart.children[1].children[2].innerHTML = desk4Ul2;
+  mainPart.children[1].children[4].innerHTML = desk4Ul3;
+  mainPart.children[2].src = desk4image1;
 }
 
 popButton3.addEventListener('click', popUp3);
