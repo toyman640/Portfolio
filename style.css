@@ -321,6 +321,13 @@ input {
 
 .pop-top-part {
   display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+
+#close-mobile-pop {
+  background-color: inherit;
+  border: none;
 }
 
 .pop-close-mobile {
@@ -349,12 +356,19 @@ input {
   list-style: none;
   padding-left: 0;
   display: flex;
+  justify-content: space-between;
+  width: 70%;
 }
 
 .mobile-pop-exp li {
-  color: #344563;
-  font-size: 0.813em;
+  color: #7a869a;
+  font-size: 0.713em;
   margin-top: 0;
+}
+
+.current-exp-pop {
+  color: #344563;
+  font-weight: 600;
 }
 
 .pop-proj-desc {

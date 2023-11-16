@@ -141,13 +141,7 @@ function popUp3() {
 
 popButton3.addEventListener('click', popUp3);
 
-const popClose = document.querySelector('.pop-close');
-
-function popCloseButton() {
-  handleBackground();
-}
-
-popClose.addEventListener('click', popCloseButton);
+mobileClosePop.addEventListener('click', handleBackground);
 
 // DESKTOP POPUP CODE
 
