@@ -141,8 +141,6 @@ function popUp3() {
 
 popButton3.addEventListener('click', popUp3);
 
-
-
 mobileClosePop.addEventListener('click', handleBackground);
 
 // DESKTOP POPUP CODE
