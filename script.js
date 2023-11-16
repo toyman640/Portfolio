@@ -149,9 +149,9 @@ const deskPop1 = document.querySelector('#desk-btn-1');
 const deskPop2 = document.querySelector('#desk-btn-2');
 const deskPop3 = document.querySelector('#desk-btn-3');
 const deskPop4 = document.querySelector('#desk-btn-4');
-const restPage = document.querySelectorAll('.for-desktop');
-const deskPop = document.querySelector('.desk-pop');
-const popContent = document.querySelector('.pop-content');
+// const restPage = document.querySelectorAll('.for-desktop');
+const deskPop = document.querySelector('.desktop-pop');
+const popContent = document.querySelector('.desk-main-pop');
 
 const deskObject1 = {
   first: {
@@ -183,19 +183,19 @@ const deskinfoC = deskObject1.first.info0[2];
 const deskImage1 = deskObject1.first.image0;
 
 function deskToggle() {
-  content.classList.toggle('blend-desk-pop1');
-  deskPop.classList.toggle('desk-content-gone');
-  for (let c = 0; c < restPage.length; c += 1) {
-    restPage[c].classList.toggle('desk-content-gone');
+  content.classList.toggle('blend-mode-desk');
+  deskPop.classList.toggle('hide-desk-pop');
+  for (let c = 0; c < restOfPage.length; c += 1) {
+    restOfPage[c].classList.toggle('hide-other-part');
   }
 }
 
 function oneButton() {
-  popContent.children[0].innerHTML = deskTitle1;
-  popContent.children[2].children[0].innerHTML = deskinfoA;
-  popContent.children[2].children[2].innerHTML = deskinfoB;
-  popContent.children[2].children[4].innerHTML = deskinfoC;
-  popContent.children[3].src = deskImage1;
+  popContent.children[0].children[0].innerHTML = deskTitle1;
+  popContent.children[1].children[0].innerHTML = deskinfoA;
+  popContent.children[1].children[2].innerHTML = deskinfoB;
+  popContent.children[1].children[4].innerHTML = deskinfoC;
+  popContent.children[2].src = deskImage1;
   deskToggle();
 }
 
@@ -208,11 +208,11 @@ const deskinfoF = deskObject1.second.infoA[2];
 const deskImage2 = deskObject1.second.imageA;
 
 function twoButton() {
-  popContent.children[0].innerHTML = deskTitle2;
-  popContent.children[2].children[0].innerHTML = deskinfoD;
-  popContent.children[2].children[2].innerHTML = deskinfoE;
-  popContent.children[2].children[4].innerHTML = deskinfoF;
-  popContent.children[3].src = deskImage2;
+  popContent.children[0].children[0].innerHTML = deskTitle2;
+  popContent.children[1].children[0].innerHTML = deskinfoD;
+  popContent.children[1].children[2].innerHTML = deskinfoE;
+  popContent.children[1].children[4].innerHTML = deskinfoF;
+  popContent.children[2].src = deskImage2;
   deskToggle();
 }
 
@@ -225,11 +225,11 @@ const deskinfoI = deskObject1.third.infoB[2];
 const deskImage3 = deskObject1.third.imageB;
 
 function threeButton() {
-  popContent.children[0].innerHTML = deskTitle3;
-  popContent.children[2].children[0].innerHTML = deskinfoG;
-  popContent.children[2].children[2].innerHTML = deskinfoH;
-  popContent.children[2].children[4].innerHTML = deskinfoI;
-  popContent.children[3].src = deskImage3;
+  popContent.children[0].children[0].innerHTML = deskTitle3;
+  popContent.children[1].children[0].innerHTML = deskinfoG;
+  popContent.children[1].children[2].innerHTML = deskinfoH;
+  popContent.children[1].children[4].innerHTML = deskinfoI;
+  popContent.children[2].src = deskImage3;
   deskToggle();
 }
 
@@ -242,11 +242,11 @@ const deskinfoL = deskObject1.fourth.infoC[2];
 const deskImage4 = deskObject1.fourth.imageC;
 
 function fourButton() {
-  popContent.children[0].innerHTML = deskTitle4;
-  popContent.children[2].children[0].innerHTML = deskinfoJ;
-  popContent.children[2].children[2].innerHTML = deskinfoK;
-  popContent.children[2].children[4].innerHTML = deskinfoL;
-  popContent.children[3].src = deskImage4;
+  popContent.children[0].children[0].innerHTML = deskTitle4;
+  popContent.children[1].children[0].innerHTML = deskinfoJ;
+  popContent.children[1].children[2].innerHTML = deskinfoK;
+  popContent.children[1].children[4].innerHTML = deskinfoL;
+  popContent.children[2].src = deskImage4;
   deskToggle();
 }
 
