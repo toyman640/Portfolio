@@ -260,8 +260,8 @@ function deskCloseButton() {
 
 deskPopClose.addEventListener('click', deskCloseButton);
 
-const mail = document.querySelector('#email1');
-const message = document.querySelector('.validation-messg');
+const mail = document.querySelector('#email');
+const message = document.querySelector('.validation-message');
 const formButton = document.querySelector('#form-sub');
 const divMessage = document.querySelector('.div-msg');
 
@@ -271,26 +271,14 @@ function mailChecker(event) {
     divMessage.classList.remove('invisible');
     message.innerHTML = 'Please, use lower case for email input';
     event.preventDefault();
+
+    setTimeout(() => {
+      divMessage.classList.add('invisible');
+    }, 5000);
   }
 }
 
 formButton.addEventListener('click', mailChecker);
-
-const mailDesk = document.querySelector('#email');
-const messageDesk = document.querySelector('.desk-validation-messg');
-const formButtonDesk = document.querySelector('#desk-form-button');
-const divMessageDesk = document.querySelector('.desk-form-msg');
-
-function mailCheckerDesk(ev) {
-  const mailInfoDesk = mailDesk.value;
-  if (mailInfoDesk !== mailInfoDesk.toLowerCase()) {
-    divMessageDesk.classList.remove('desk-content-gone');
-    messageDesk.innerHTML = 'Please, use lower case for email input';
-    ev.preventDefault();
-  }
-}
-
-formButtonDesk.addEventListener('click', mailCheckerDesk);
 
 const nameInput = document.querySelector('#name1');
 const emailInput = document.querySelector('#email1');

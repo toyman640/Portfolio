@@ -423,6 +423,18 @@ input {
   display: none;
 }
 
+.invisible {
+  display: none;
+}
+
+.validation-message {
+  color: red;
+  background-color: #fff;
+  width: 90%;
+  text-align: center;
+  border-radius: 10px;
+}
+
 @media (min-width: 768px) {
   .keep {
     display: none;
