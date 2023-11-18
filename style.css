@@ -53,6 +53,15 @@ body {
   display: none;
 }
 
+.intro-cover {
+  border-bottom-left-radius: 80px;
+  background-color: #fff;
+}
+
+.intro-wrap {
+  background-color: #faf9f6;
+}
+
 .navigation {
   display: flex;
   width: 80%;
@@ -126,6 +135,7 @@ body {
   padding: 3%;
   width: 80%;
   border: 1px solid #dfe1e6;
+  margin-bottom: 20%;
 }
 
 .card-img-mobile {
@@ -187,11 +197,17 @@ body {
 
 .about-desk {
   background-color: #fff;
+  padding-top: 10%;
+  border-top-right-radius: 80px;
 }
 
 .main-part {
   width: 90%;
   margin-left: 5%;
+}
+
+.about-cover {
+  background-color: #faf9f6;
 }
 
 .about-title {
@@ -454,6 +470,10 @@ input {
     background-color: #fff;
   }
 
+  .intro-wrap {
+    background-color: #faf9f6;
+  }
+
   .content-section {
     display: flex;
     flex-direction: column;
@@ -491,7 +511,7 @@ input {
   }
 
   .works {
-    background-color: #dfe1e6;
+    background-color: #faf9f6;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -506,7 +526,7 @@ input {
     margin-top: 10%;
     border-radius: 24px;
     height: 31em;
-    width: 65%;
+    width: 80%;
   }
 
   .card-title {
@@ -522,7 +542,7 @@ input {
     justify-content: space-between;
     list-style: none;
     padding-left: 0;
-    width: 50%;
+    width: 70%;
     margin-top: 0;
   }
 
@@ -567,10 +587,12 @@ input {
   .card-image {
     height: 28em;
     padding: 20px;
+    width: 50%;
   }
 
   .card-content {
     padding: 20px;
+    width: 50%;
   }
 
   .about-desk {
