@@ -526,7 +526,7 @@ input {
     margin-top: 10%;
     border-radius: 24px;
     height: 31em;
-    width: 65%;
+    width: 80%;
   }
 
   .card-title {
@@ -542,7 +542,7 @@ input {
     justify-content: space-between;
     list-style: none;
     padding-left: 0;
-    width: 50%;
+    width: 70%;
     margin-top: 0;
   }
 
@@ -587,10 +587,12 @@ input {
   .card-image {
     height: 28em;
     padding: 20px;
+    width: 50%;
   }
 
   .card-content {
     padding: 20px;
+    width: 50%;
   }
 
   .about-desk {
