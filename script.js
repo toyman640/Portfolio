@@ -158,7 +158,7 @@ const deskObject1 = {
     title0: 'AG SUMMIT',
     info0: ['AGRICULTURE', 'SUMMIT', '2025'],
     image0: 'images/real-work-d-1.png',
-    dsec0: 'A web application based on informing propertive deligate about course of program of an upcomming summit. A responsive webpage with a simple layout'
+    dsec0: 'A web application based on informing propertive deligate about course of program of an upcomming summit. A responsive webpage with a simple layout',
   },
   second: {
     titleA: 'Multi-Post Stories',
@@ -198,7 +198,7 @@ function oneButton() {
   popContent.children[1].children[2].innerHTML = deskinfoB;
   popContent.children[1].children[4].innerHTML = deskinfoC;
   popContent.children[2].src = deskImage1;
-  popContent.children[3].children[0].innerHTML = dsecDescribe; 
+  popContent.children[3].children[0].innerHTML = dsecDescribe;
   deskToggle();
 }
 
