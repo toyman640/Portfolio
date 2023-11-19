@@ -842,4 +842,9 @@ input {
   .hide-other-part {
     display: none;
   }
+
+  .desk-pop-link {
+    text-decoration: none;
+    color: #396df2;
+  }
 }
