@@ -207,7 +207,7 @@ body {
 }
 
 .about-cover {
-  background-color: #faf9f6;
+  background-color: #dfe1e6;
 }
 
 .about-title {
@@ -483,7 +483,7 @@ input {
   }
 
   .intro-wrap {
-    background-color: #faf9f6;
+    background-color: #dfe1e6;
   }
 
   .content-section {
@@ -523,7 +523,7 @@ input {
   }
 
   .works {
-    background-color: #faf9f6;
+    background-color: #dfe1e6;
     display: flex;
     flex-direction: column;
     align-items: center;

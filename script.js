@@ -155,9 +155,10 @@ const popContent = document.querySelector('.desk-main-pop');
 
 const deskObject1 = {
   first: {
-    title0: 'Tonic',
-    info0: ['CANOPY', 'Back End Dev', '2015'],
-    image0: 'images/works-img-1.png',
+    title0: 'AG SUMMIT',
+    info0: ['AGRICULTURE', 'SUMMIT', '2025'],
+    image0: 'images/real-work-d-1.png',
+    dsec0: 'A web application based on informing propertive deligate about course of program of an upcomming summit. A responsive webpage with a simple layout'
   },
   second: {
     titleA: 'Multi-Post Stories',
@@ -181,6 +182,7 @@ const deskinfoA = deskObject1.first.info0[0];
 const deskinfoB = deskObject1.first.info0[1];
 const deskinfoC = deskObject1.first.info0[2];
 const deskImage1 = deskObject1.first.image0;
+const dsecDescribe = deskObject1.first.dsec0;
 
 function deskToggle() {
   content.classList.toggle('blend-mode-desk');
@@ -196,6 +198,7 @@ function oneButton() {
   popContent.children[1].children[2].innerHTML = deskinfoB;
   popContent.children[1].children[4].innerHTML = deskinfoC;
   popContent.children[2].src = deskImage1;
+  popContent.children[3].children[0].innerHTML = dsecDescribe; 
   deskToggle();
 }
 
