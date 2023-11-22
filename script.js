@@ -158,22 +158,33 @@ const deskObject1 = {
     title0: 'AG SUMMIT',
     info0: ['AGRICULTURE', 'SUMMIT', '2025'],
     image0: 'images/real-work-d-1.png',
-    dsec0: 'A web application based on informing propertive deligate about course of program of an upcomming summit. A responsive webpage with a simple layout'
+    dsec0: 'A web application based on informing propertive deligate about course of program of an upcomming summit. A responsive webpage with a simple layout',
+    gitLink0: 'https://github.com/toyman640/Agro-Summit.git',
+    liveLink0: 'https://toyman640.github.io/Agro-Summit/',
   },
   second: {
-    titleA: 'Multi-Post Stories',
-    infoA: ['FACEBOOK', 'Full Stack Dev', '2015'],
-    imageA: 'images/works-img-2.svg',
+    titleA: 'Budget Application',
+    infoA: ['KOWOPE', 'FINANCE', 'BUDGET'],
+    imageA: 'images/real-word-d-2(fix).PNG',
+    dsec1: 'Create a mobile-view-only web application where users can sign up, establish budget categories, and log expenses corresponding to each category.',
+    gitLink1: 'https://github.com/toyman640/budget-app.git',
+    liveLink1: 'https://kowope.onrender.com/',
   },
   third: {
-    titleB: 'Facebook 360',
-    infoB: ['FACEBOOK', 'Full Stack Dev', '2018'],
-    imageB: 'images/works-img-3.svg',
+    titleB: 'Meal Recipe',
+    infoB: ['MEALS', 'INGREDIENTS', 'LIKES AND COMMENTS'],
+    imageB: 'images/real-word-d-3.PNG',
+    dsec2: 'Create a mobile-view-only web application where users can sign up, establish budget categories, and log expenses corresponding to each category.',
+    gitLink2: 'https://github.com/toyman640/Javascript-Capstone-project.git',
+    liveLink2: 'https://toyman640.github.io/Javascript-Capstone-project/dist/',
   },
   fourth: {
-    titleC: 'Uber Navigation',
-    infoC: ['Uber', 'Lead Developer', '2015'],
-    imageC: 'images/works-img-4.svg',
+    titleC: 'Farm hub',
+    infoC: ['Census', 'Chart', 'Records'],
+    imageC: 'images/real-word-d-4(main).PNG',
+    dsec3: 'Create a mobile-view-only web application where users can sign up, establish budget categories, and log expenses corresponding to each category.',
+    gitLink2: 'https://github.com/toyman640/farmapp.git',
+    liveLink2: '',
   },
 };
 
@@ -209,6 +220,7 @@ const deskinfoD = deskObject1.second.infoA[0];
 const deskinfoE = deskObject1.second.infoA[1];
 const deskinfoF = deskObject1.second.infoA[2];
 const deskImage2 = deskObject1.second.imageA;
+const dsecDescribe1 = deskObject1.second.dsec1;
 
 function twoButton() {
   popContent.children[0].children[0].innerHTML = deskTitle2;
@@ -216,6 +228,7 @@ function twoButton() {
   popContent.children[1].children[2].innerHTML = deskinfoE;
   popContent.children[1].children[4].innerHTML = deskinfoF;
   popContent.children[2].src = deskImage2;
+  popContent.children[3].children[0].innerHTML = dsecDescribe1;
   deskToggle();
 }
 
@@ -226,6 +239,7 @@ const deskinfoG = deskObject1.third.infoB[0];
 const deskinfoH = deskObject1.third.infoB[1];
 const deskinfoI = deskObject1.third.infoB[2];
 const deskImage3 = deskObject1.third.imageB;
+const dsecDescribe2 = deskObject1.third.dsec2;
 
 function threeButton() {
   popContent.children[0].children[0].innerHTML = deskTitle3;
@@ -233,6 +247,7 @@ function threeButton() {
   popContent.children[1].children[2].innerHTML = deskinfoH;
   popContent.children[1].children[4].innerHTML = deskinfoI;
   popContent.children[2].src = deskImage3;
+  popContent.children[3].children[0].innerHTML = dsecDescribe2;
   deskToggle();
 }
 
@@ -243,6 +258,7 @@ const deskinfoJ = deskObject1.fourth.infoC[0];
 const deskinfoK = deskObject1.fourth.infoC[1];
 const deskinfoL = deskObject1.fourth.infoC[2];
 const deskImage4 = deskObject1.fourth.imageC;
+const dsecDescribe3 = deskObject1.fourth.dsec3;
 
 function fourButton() {
   popContent.children[0].children[0].innerHTML = deskTitle4;
@@ -250,10 +266,13 @@ function fourButton() {
   popContent.children[1].children[2].innerHTML = deskinfoK;
   popContent.children[1].children[4].innerHTML = deskinfoL;
   popContent.children[2].src = deskImage4;
+  popContent.children[3].children[0].innerHTML = dsecDescribe3;
   deskToggle();
 }
 
 deskPop4.addEventListener('click', fourButton);
+
+// end desktop pop-up
 
 const deskPopClose = document.querySelector('#desk-pop-close');
 
