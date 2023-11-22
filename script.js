@@ -1,6 +1,6 @@
 const ham = document.querySelector('#ham-btn');
 const hamClose = document.querySelector('#close-menu');
-const content = document.querySelector('.intro-cover');
+const content = document.querySelector('.cover-all');
 const menuList = document.querySelector('.ham-menu');
 let restOfPage = document.querySelectorAll('.toggle-section');
 const menuItems = document.querySelectorAll('.menu-item');
