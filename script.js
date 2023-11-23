@@ -215,6 +215,7 @@ function oneButton() {
   popContent.children[3].children[0].innerHTML = dsecDescribe; 
   popContent.children[3].children[1].children[1].href = seeLive0;
   popContent.children[3].children[1].children[2].href = seeGit0;
+  stacksSection.innerHTML = '';
   stacksSection.innerHTML += `<button class="deskpop-stacks">HTML</button>
   <button class="deskpop-stacks">CSS</button>
   <button class="deskpop-stacks">JavaScript</button>`;
@@ -241,6 +242,7 @@ function twoButton() {
   popContent.children[3].children[0].innerHTML = dsecDescribe1;
   popContent.children[3].children[1].children[1].href = seeLive1;
   popContent.children[3].children[1].children[2].href = seeGit1;
+  stacksSection.innerHTML = '';
   stacksSection.innerHTML += `<button class="deskpop-stacks">HTML</button>
   <button class="deskpop-stacks">CSS</button>
   <button class="deskpop-stacks">JavaScript</button>
@@ -268,6 +270,7 @@ function threeButton() {
   popContent.children[3].children[0].innerHTML = dsecDescribe2;
   popContent.children[3].children[1].children[1].href = seeLive2;
   popContent.children[3].children[1].children[2].href = seeGit2;
+  stacksSection.innerHTML = '';
   stacksSection.innerHTML += `<button class="deskpop-stacks">HTML</button>
   <button class="deskpop-stacks">CSS</button>
   <button class="deskpop-stacks">JavaScript</button>
@@ -295,6 +298,7 @@ function fourButton() {
   popContent.children[3].children[0].innerHTML = dsecDescribe3;
   popContent.children[3].children[1].children[1].href = seeLive3;
   popContent.children[3].children[1].children[2].href = seeGit3;
+  stacksSection.innerHTML = '';
   stacksSection.innerHTML += `<button class="deskpop-stacks">HTML</button>
   <button class="deskpop-stacks">CSS</button>
   <button class="deskpop-stacks">JavaScript</button>
