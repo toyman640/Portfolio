@@ -140,6 +140,8 @@ body {
 
 .card-img-mobile {
   height: 13.75em;
+  width: 100%;
+  /* border: 1px solid red; */
 }
 
 .mobile-card-title {
@@ -207,7 +209,7 @@ body {
 }
 
 .about-cover {
-  background-color: #dfe1e6;
+  background-color: #faf9f6;
 }
 
 .about-title {
