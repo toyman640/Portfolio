@@ -40,27 +40,40 @@ const popButton3 = document.querySelector('#button-4');
 const pop = document.querySelector('.mobile-popup');
 const mainPart = document.querySelector('.main-pop');
 const mobileClosePop = document.querySelector('#close-mobile-pop');
+const mobilePopStacks = document.querySelector('.mobile-pop-stacks');
 
 const cardObject1 = {
   one: {
-    title: 'Tonic',
-    info: ['CANOPY', 'Back End Dev', '2015'],
-    image: 'images/works-1.svg',
+    title: 'AG SUMMIT',
+    info: ['AGRICULTURE', 'SUMMIT', '2023'],
+    image: 'images/real-work-d-1.png',
+    mobiledesc0: 'A web application based on informing propertive deligate about course of program of an upcomming summit',
+    mobileGit0: 'https://github.com/toyman640/Agro-Summit.git',
+    mobileLive0: 'https://toyman640.github.io/Agro-Summit/'
   },
   two: {
-    title: 'Multi-Post Stories',
-    info: ['CANOPY', 'Back End Dev', '2015'],
-    image: 'images/works-2.svg',
+    title: 'Budget App.',
+    info: ['KOWOPE', 'FINANCE', 'BUDGET'],
+    image: 'images/real-word-d-2(fix).PNG',
+    mobiledesc1: ' Create a mobile-view-only web application where users can sign up, establish budget categories, and log expenses corresponding to each category.',
+    mobileGit1: 'https://github.com/toyman640/budget-app.git',
+    mobileLive1: 'https://toyman640.github.io/Agro-Summit/'
   },
   three: {
-    title: 'Tonic',
-    info: ['CANOPY', 'Back End Dev', '2015'],
-    image: 'images/works-3.svg',
+    title: 'Meal Recipe',
+    info: ['MEALS', 'INGREDIENTS', 'LIKES'],
+    image: 'images/real-word-d-3.PNG',
+    mobiledesc2: ' Develop a desktop webpage that consumes an API, presenting users with a variety of international dishes along with their corresponding ingredients. Users can interact by liking meals and leaving comments for each meal',
+    mobileGit2: 'https://github.com/toyman640/Javascript-Capstone-project.git',
+    mobileLive2: 'https://toyman640.github.io/Javascript-Capstone-project/dist/'
   },
   four: {
-    title: 'Multi-Post Stories',
-    info: ['CANOPY', 'Back End Dev', '2015'],
-    image: 'images/works-4.svg',
+    title: 'Farm hub',
+    info: ['Census', 'Chart', 'Records'],
+    image: 'images/real-word-d-4(main).PNG',
+    mobiledesc3: 'Create a Python-based web application designed to manage and track essential data related to animal populations. The application will facilitate the recording of animal population metrics, including mortality and births, while also maintaining detailed records for various departments involved in the management of these populations.',
+    mobileGit3: 'https://github.com/toyman640/farmapp.git',
+    mobileLive3: ''
   },
 };
 
@@ -77,6 +90,9 @@ const deskUl1 = cardObject1.one.info[0];
 const deskUl2 = cardObject1.one.info[1];
 const deskUl3 = cardObject1.one.info[2];
 const deskimage1 = cardObject1.one.image;
+const mobileDescribe0 = cardObject1.one.mobiledesc0;
+const mobileGithub0 = cardObject1.one.mobileGit0;
+const mobileLive0 = cardObject1.one.mobileLive0;
 
 function popUp() {
   mainPart.children[0].children[0].innerHTML = mainTittle;
@@ -84,6 +100,13 @@ function popUp() {
   mainPart.children[1].children[2].innerHTML = deskUl2;
   mainPart.children[1].children[4].innerHTML = deskUl3;
   mainPart.children[2].src = deskimage1;
+  mainPart.children[3].innerHTML = mobileDescribe0;
+  mainPart.children[5].children[0].href = mobileLive0;
+  mainPart.children[5].children[1].href = mobileGithub0;
+  mobilePopStacks.innerHTML = '';
+  mobilePopStacks.innerHTML +=  `<button class="pop-stacks">HTML</button>
+  <button class="pop-stacks">CSS</button>
+  <button class="pop-stacks">JavaScript</button>`;
   handleBackground();
 }
 popButton.addEventListener('click', popUp);
@@ -95,6 +118,9 @@ const desk2Ul1 = cardObject1.two.info[0];
 const desk2Ul2 = cardObject1.two.info[1];
 const desk2Ul3 = cardObject1.two.info[2];
 const desk2image1 = cardObject1.two.image;
+const mobileDescribe1 = cardObject1.two.mobiledesc1;
+const mobileGithub1 = cardObject1.two.mobileGit1;
+const mobileLive1 = cardObject1.two.mobileLive1;
 
 function popUp1() {
   handleBackground();
@@ -103,6 +129,13 @@ function popUp1() {
   mainPart.children[1].children[2].innerHTML = desk2Ul2;
   mainPart.children[1].children[4].innerHTML = desk2Ul3;
   mainPart.children[2].src = desk2image1;
+  mainPart.children[3].innerHTML = mobileDescribe1;
+  mainPart.children[5].children[0].href = mobileLive1;
+  mainPart.children[5].children[1].href = mobileGithub1;
+  mobilePopStacks.innerHTML = '';
+  mobilePopStacks.innerHTML +=  `<button class="pop-stacks">HTML</button>
+  <button class="pop-stacks">CSS</button>
+  <button class="pop-stacks">JavaScript</button><button class="pop-stacks">Ruby on rails</button>`;
 }
 
 popButton1.addEventListener('click', popUp1);
@@ -112,6 +145,13 @@ const desk3Ul1 = cardObject1.three.info[0];
 const desk3Ul2 = cardObject1.three.info[1];
 const desk3Ul3 = cardObject1.three.info[2];
 const desk3image1 = cardObject1.three.image;
+const mobileDescribe2 = cardObject1.three.mobiledesc2;
+const mobileGithub2 = cardObject1.three.mobileGit2;
+const mobileLive2 = cardObject1.three.mobileLive2;
+mobilePopStacks.innerHTML += '';
+  mobilePopStacks.innerHTML +=  `<button class="pop-stacks">HTML</button>
+  <button class="pop-stacks">CSS</button>
+  <button class="pop-stacks">JavaScript</button><button class="pop-stacks">Webpack</button>`;
 
 function popUp2() {
   handleBackground();
@@ -120,6 +160,9 @@ function popUp2() {
   mainPart.children[1].children[2].innerHTML = desk3Ul2;
   mainPart.children[1].children[4].innerHTML = desk3Ul3;
   mainPart.children[2].src = desk3image1;
+  mainPart.children[3].innerHTML = mobileDescribe2;
+  mainPart.children[5].children[0].href = mobileLive2;
+  mainPart.children[5].children[1].href = mobileGithub2;
 }
 
 popButton2.addEventListener('click', popUp2);
@@ -129,6 +172,9 @@ const desk4Ul1 = cardObject1.four.info[0];
 const desk4Ul2 = cardObject1.four.info[1];
 const desk4Ul3 = cardObject1.four.info[2];
 const desk4image1 = cardObject1.four.image;
+const mobileDescribe3 = cardObject1.four.mobiledesc3;
+const mobileGithub3 = cardObject1.four.mobileGit3;
+const mobileLive3 = cardObject1.four.mobileLive3;
 
 function popUp3() {
   handleBackground();
@@ -137,6 +183,13 @@ function popUp3() {
   mainPart.children[1].children[2].innerHTML = desk4Ul2;
   mainPart.children[1].children[4].innerHTML = desk4Ul3;
   mainPart.children[2].src = desk4image1;
+  mainPart.children[3].innerHTML = mobileDescribe3;
+  mainPart.children[5].children[0].href = mobileLive3;
+  mainPart.children[5].children[1].href = mobileGithub3;
+  mobilePopStacks.innerHTML = '';
+  mobilePopStacks.innerHTML +=  `<button class="pop-stacks">HTML</button>
+  <button class="pop-stacks">CSS</button>
+  <button class="pop-stacks">JavaScript</button><button class="pop-stacks">Django</button>`;
 }
 
 popButton3.addEventListener('click', popUp3);

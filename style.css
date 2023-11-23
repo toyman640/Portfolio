@@ -441,6 +441,14 @@ button {
   cursor: pointer;
 }
 
+.mobile-pop-img {
+  width: 100%;
+}
+
+.mobile-pop-link {
+  text-decoration: none;
+}
+
 @media (min-width: 768px) {
   .keep {
     display: none;
