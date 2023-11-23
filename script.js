@@ -152,7 +152,7 @@ const deskPop4 = document.querySelector('#desk-btn-4');
 // const restPage = document.querySelectorAll('.for-desktop');
 const deskPop = document.querySelector('.desktop-pop');
 const popContent = document.querySelector('.desk-main-pop');
-const stacksSection =document.querySelector('.deskpop-stacks-button');
+const stacksSection = document.querySelector('.deskpop-stacks-button');
 
 const deskObject1 = {
   first: {
@@ -212,7 +212,7 @@ function oneButton() {
   popContent.children[1].children[2].innerHTML = deskinfoB;
   popContent.children[1].children[4].innerHTML = deskinfoC;
   popContent.children[2].src = deskImage1;
-  popContent.children[3].children[0].innerHTML = dsecDescribe; 
+  popContent.children[3].children[0].innerHTML = dsecDescribe;
   popContent.children[3].children[1].children[1].href = seeLive0;
   popContent.children[3].children[1].children[2].href = seeGit0;
   stacksSection.innerHTML = '';
