@@ -435,6 +435,10 @@ input {
   border-radius: 10px;
 }
 
+button {
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .keep {
     display: none;
@@ -841,5 +845,9 @@ input {
 
   .hide-other-part {
     display: none;
+  }
+
+  .deskpop-a {
+    text-decoration: none;
   }
 }
