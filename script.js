@@ -152,6 +152,7 @@ const deskPop4 = document.querySelector('#desk-btn-4');
 // const restPage = document.querySelectorAll('.for-desktop');
 const deskPop = document.querySelector('.desktop-pop');
 const popContent = document.querySelector('.desk-main-pop');
+const stacksSection =document.querySelector('.deskpop-stacks-button');
 
 const deskObject1 = {
   first: {
@@ -213,7 +214,10 @@ function oneButton() {
   popContent.children[2].src = deskImage1;
   popContent.children[3].children[0].innerHTML = dsecDescribe; 
   popContent.children[3].children[1].children[1].href = seeLive0;
-  popContent.children[3].children[1].children[2].href = seeGit0; 
+  popContent.children[3].children[1].children[2].href = seeGit0;
+  stacksSection.innerHTML += `<button class="deskpop-stacks">HTML</button>
+  <button class="deskpop-stacks">CSS</button>
+  <button class="deskpop-stacks">JavaScript</button>`;
   deskToggle();
 }
 
@@ -236,7 +240,11 @@ function twoButton() {
   popContent.children[2].src = deskImage2;
   popContent.children[3].children[0].innerHTML = dsecDescribe1;
   popContent.children[3].children[1].children[1].href = seeLive1;
-  popContent.children[3].children[1].children[2].href = seeGit1; 
+  popContent.children[3].children[1].children[2].href = seeGit1;
+  stacksSection.innerHTML += `<button class="deskpop-stacks">HTML</button>
+  <button class="deskpop-stacks">CSS</button>
+  <button class="deskpop-stacks">JavaScript</button>
+  <button class="deskpop-stacks">Ruby on rails</button>`;
   deskToggle();
 }
 
@@ -260,6 +268,10 @@ function threeButton() {
   popContent.children[3].children[0].innerHTML = dsecDescribe2;
   popContent.children[3].children[1].children[1].href = seeLive2;
   popContent.children[3].children[1].children[2].href = seeGit2;
+  stacksSection.innerHTML += `<button class="deskpop-stacks">HTML</button>
+  <button class="deskpop-stacks">CSS</button>
+  <button class="deskpop-stacks">JavaScript</button>
+  <button class="deskpop-stacks">Webpack</button>`;
   deskToggle();
 }
 
@@ -283,6 +295,10 @@ function fourButton() {
   popContent.children[3].children[0].innerHTML = dsecDescribe3;
   popContent.children[3].children[1].children[1].href = seeLive3;
   popContent.children[3].children[1].children[2].href = seeGit3;
+  stacksSection.innerHTML += `<button class="deskpop-stacks">HTML</button>
+  <button class="deskpop-stacks">CSS</button>
+  <button class="deskpop-stacks">JavaScript</button>
+  <button class="deskpop-stacks">Django</button>`;
   deskToggle();
 }
 
