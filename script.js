@@ -49,7 +49,7 @@ const cardObject1 = {
     image: 'images/real-work-d-1.png',
     mobiledesc0: 'A web application based on informing propertive deligate about course of program of an upcomming summit',
     mobileGit0: 'https://github.com/toyman640/Agro-Summit.git',
-    mobileLive0: 'https://toyman640.github.io/Agro-Summit/'
+    mobileLive0: 'https://toyman640.github.io/Agro-Summit/',
   },
   two: {
     title: 'Budget App.',
@@ -57,7 +57,7 @@ const cardObject1 = {
     image: 'images/real-word-d-2(fix).PNG',
     mobiledesc1: ' Create a mobile-view-only web application where users can sign up, establish budget categories, and log expenses corresponding to each category.',
     mobileGit1: 'https://github.com/toyman640/budget-app.git',
-    mobileLive1: 'https://toyman640.github.io/Agro-Summit/'
+    mobileLive1: 'https://toyman640.github.io/Agro-Summit/',
   },
   three: {
     title: 'Meal Recipe',
@@ -65,7 +65,7 @@ const cardObject1 = {
     image: 'images/real-word-d-3.PNG',
     mobiledesc2: ' Develop a desktop webpage that consumes an API, presenting users with a variety of international dishes along with their corresponding ingredients. Users can interact by liking meals and leaving comments for each meal',
     mobileGit2: 'https://github.com/toyman640/Javascript-Capstone-project.git',
-    mobileLive2: 'https://toyman640.github.io/Javascript-Capstone-project/dist/'
+    mobileLive2: 'https://toyman640.github.io/Javascript-Capstone-project/dist/',
   },
   four: {
     title: 'Farm hub',
@@ -73,7 +73,7 @@ const cardObject1 = {
     image: 'images/real-word-d-4(main).PNG',
     mobiledesc3: 'Create a Python-based web application designed to manage and track essential data related to animal populations. The application will facilitate the recording of animal population metrics, including mortality and births, while also maintaining detailed records for various departments involved in the management of these populations.',
     mobileGit3: 'https://github.com/toyman640/farmapp.git',
-    mobileLive3: ''
+    mobileLive3: '',
   },
 };
 
@@ -92,7 +92,7 @@ const deskUl3 = cardObject1.one.info[2];
 const deskimage1 = cardObject1.one.image;
 const mobileDescribe0 = cardObject1.one.mobiledesc0;
 const mobileGithub0 = cardObject1.one.mobileGit0;
-const mobileLive0 = cardObject1.one.mobileLive0;
+const { mobileLive0 } = cardObject1.one;
 
 function popUp() {
   mainPart.children[0].children[0].innerHTML = mainTittle;
@@ -104,7 +104,7 @@ function popUp() {
   mainPart.children[5].children[0].href = mobileLive0;
   mainPart.children[5].children[1].href = mobileGithub0;
   mobilePopStacks.innerHTML = '';
-  mobilePopStacks.innerHTML +=  `<button class="pop-stacks">HTML</button>
+  mobilePopStacks.innerHTML += `<button class="pop-stacks">HTML</button>
   <button class="pop-stacks">CSS</button>
   <button class="pop-stacks">JavaScript</button>`;
   handleBackground();
@@ -120,7 +120,7 @@ const desk2Ul3 = cardObject1.two.info[2];
 const desk2image1 = cardObject1.two.image;
 const mobileDescribe1 = cardObject1.two.mobiledesc1;
 const mobileGithub1 = cardObject1.two.mobileGit1;
-const mobileLive1 = cardObject1.two.mobileLive1;
+const { mobileLive1 } = cardObject1.two;
 
 function popUp1() {
   handleBackground();
@@ -133,7 +133,7 @@ function popUp1() {
   mainPart.children[5].children[0].href = mobileLive1;
   mainPart.children[5].children[1].href = mobileGithub1;
   mobilePopStacks.innerHTML = '';
-  mobilePopStacks.innerHTML +=  `<button class="pop-stacks">HTML</button>
+  mobilePopStacks.innerHTML += `<button class="pop-stacks">HTML</button>
   <button class="pop-stacks">CSS</button>
   <button class="pop-stacks">JavaScript</button><button class="pop-stacks">Ruby on rails</button>`;
 }
@@ -147,9 +147,9 @@ const desk3Ul3 = cardObject1.three.info[2];
 const desk3image1 = cardObject1.three.image;
 const mobileDescribe2 = cardObject1.three.mobiledesc2;
 const mobileGithub2 = cardObject1.three.mobileGit2;
-const mobileLive2 = cardObject1.three.mobileLive2;
+const { mobileLive2 } = cardObject1.three;
 mobilePopStacks.innerHTML += '';
-  mobilePopStacks.innerHTML +=  `<button class="pop-stacks">HTML</button>
+mobilePopStacks.innerHTML += `<button class="pop-stacks">HTML</button>
   <button class="pop-stacks">CSS</button>
   <button class="pop-stacks">JavaScript</button><button class="pop-stacks">Webpack</button>`;
 
@@ -174,7 +174,7 @@ const desk4Ul3 = cardObject1.four.info[2];
 const desk4image1 = cardObject1.four.image;
 const mobileDescribe3 = cardObject1.four.mobiledesc3;
 const mobileGithub3 = cardObject1.four.mobileGit3;
-const mobileLive3 = cardObject1.four.mobileLive3;
+const { mobileLive3 } = cardObject1.four;
 
 function popUp3() {
   handleBackground();
@@ -187,7 +187,7 @@ function popUp3() {
   mainPart.children[5].children[0].href = mobileLive3;
   mainPart.children[5].children[1].href = mobileGithub3;
   mobilePopStacks.innerHTML = '';
-  mobilePopStacks.innerHTML +=  `<button class="pop-stacks">HTML</button>
+  mobilePopStacks.innerHTML += `<button class="pop-stacks">HTML</button>
   <button class="pop-stacks">CSS</button>
   <button class="pop-stacks">JavaScript</button><button class="pop-stacks">Django</button>`;
 }
