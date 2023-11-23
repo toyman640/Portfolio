@@ -842,4 +842,8 @@ input {
   .hide-other-part {
     display: none;
   }
+
+  .deskpop-a {
+    text-decoration: none;
+  }
 }

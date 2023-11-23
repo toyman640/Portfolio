@@ -183,8 +183,8 @@ const deskObject1 = {
     infoC: ['Census', 'Chart', 'Records'],
     imageC: 'images/real-word-d-4(main).PNG',
     dsec3: 'Create a mobile-view-only web application where users can sign up, establish budget categories, and log expenses corresponding to each category.',
-    gitLink2: 'https://github.com/toyman640/farmapp.git',
-    liveLink2: '',
+    gitLink3: 'https://github.com/toyman640/farmapp.git',
+    liveLink3: '',
   },
 };
 
@@ -194,6 +194,8 @@ const deskinfoB = deskObject1.first.info0[1];
 const deskinfoC = deskObject1.first.info0[2];
 const deskImage1 = deskObject1.first.image0;
 const dsecDescribe = deskObject1.first.dsec0;
+const seeLive0 = deskObject1.first.liveLink0;
+const seeGit0 = deskObject1.first.gitLink0;
 
 function deskToggle() {
   content.classList.toggle('blend-mode-desk');
@@ -210,6 +212,8 @@ function oneButton() {
   popContent.children[1].children[4].innerHTML = deskinfoC;
   popContent.children[2].src = deskImage1;
   popContent.children[3].children[0].innerHTML = dsecDescribe; 
+  popContent.children[3].children[1].children[1].href = seeLive0;
+  popContent.children[3].children[1].children[2].href = seeGit0; 
   deskToggle();
 }
 
@@ -221,6 +225,8 @@ const deskinfoE = deskObject1.second.infoA[1];
 const deskinfoF = deskObject1.second.infoA[2];
 const deskImage2 = deskObject1.second.imageA;
 const dsecDescribe1 = deskObject1.second.dsec1;
+const seeLive1 = deskObject1.second.liveLink1;
+const seeGit1 = deskObject1.second.gitLink1;
 
 function twoButton() {
   popContent.children[0].children[0].innerHTML = deskTitle2;
@@ -229,6 +235,8 @@ function twoButton() {
   popContent.children[1].children[4].innerHTML = deskinfoF;
   popContent.children[2].src = deskImage2;
   popContent.children[3].children[0].innerHTML = dsecDescribe1;
+  popContent.children[3].children[1].children[1].href = seeLive1;
+  popContent.children[3].children[1].children[2].href = seeGit1; 
   deskToggle();
 }
 
@@ -240,6 +248,8 @@ const deskinfoH = deskObject1.third.infoB[1];
 const deskinfoI = deskObject1.third.infoB[2];
 const deskImage3 = deskObject1.third.imageB;
 const dsecDescribe2 = deskObject1.third.dsec2;
+const seeLive2 = deskObject1.third.liveLink2;
+const seeGit2 = deskObject1.third.gitLink2;
 
 function threeButton() {
   popContent.children[0].children[0].innerHTML = deskTitle3;
@@ -248,6 +258,8 @@ function threeButton() {
   popContent.children[1].children[4].innerHTML = deskinfoI;
   popContent.children[2].src = deskImage3;
   popContent.children[3].children[0].innerHTML = dsecDescribe2;
+  popContent.children[3].children[1].children[1].href = seeLive2;
+  popContent.children[3].children[1].children[2].href = seeGit2;
   deskToggle();
 }
 
@@ -259,6 +271,8 @@ const deskinfoK = deskObject1.fourth.infoC[1];
 const deskinfoL = deskObject1.fourth.infoC[2];
 const deskImage4 = deskObject1.fourth.imageC;
 const dsecDescribe3 = deskObject1.fourth.dsec3;
+const seeLive3 = deskObject1.fourth.liveLink3;
+const seeGit3 = deskObject1.fourth.gitLink3;
 
 function fourButton() {
   popContent.children[0].children[0].innerHTML = deskTitle4;
@@ -267,6 +281,8 @@ function fourButton() {
   popContent.children[1].children[4].innerHTML = deskinfoL;
   popContent.children[2].src = deskImage4;
   popContent.children[3].children[0].innerHTML = dsecDescribe3;
+  popContent.children[3].children[1].children[1].href = seeLive3;
+  popContent.children[3].children[1].children[2].href = seeGit3;
   deskToggle();
 }
 
