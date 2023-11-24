@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
   <div class="ham-menu keep">
@@ -88,9 +89,9 @@
         <p class="logo">My Logo</p>
         <img class="hamburger" id="ham-btn" src="images/hamburger.svg" id="ham-btn" alt="" srcset="">
         <ul class="desk-menu">
-          <li><a  href="#intro">Portfolio</a></li>
-          <li ><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a  href="#intro"><span class="desk-word-button">Portfolio</span> </a></li>
+          <li ><a href="#about"><span class="desk-word-button">About</span></a></li>
+          <li><a href="#contact"><span class="desk-word-button">Contact</span></a></li>
         </ul>
       </nav>
     </section>
@@ -100,23 +101,23 @@
         <div class="introduction">
     
           <div class="content-section">
-            <h1 class="greet">I'm Omotoyosi.<br> Glad to see you!</h1>
-            <p class="foreword">I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
+            <h1 class="greet animate__animated animate__slideInRight" >Hi, I'm Omotoyosi.<br> Thanks for visiting!</h1>
+            <p class="foreword">Full-stack developer with practical, hands-on learning experience in building applications for both individuals and businesses<p>
             <p class="connect">LET'S CONNECT</p>
             <div class="header-socials">
-              <a href="https://twitter.com/_@toyman">
+              <a href="https://twitter.com/@_toyman" target="_blank">
                 <img src="images/twitter.svg" alt="twiiter-icon"/>
               </a>
-              <a href="https://www.linkedin.com/in/falako-omotoyosi-b86a1a169/">
+              <a href="https://www.linkedin.com/in/falako-omotoyosi-b86a1a169/" target="_blank">
                 <img src="images/Linkedin icon.svg" alt="twiiter-icon"/>
               </a>
-              <a href="https://medium.com/">
+              <a href="https://medium.com/" target="_blank">
                 <img src="images/medium (2).svg" alt="twiiter-icon"/>
               </a>
-              <a href="https://github.com/toyman640">
+              <a href="https://github.com/toyman640" target="_blank">
                 <img src="images/github.svg" alt="twiiter-icon"/>
               </a>
-              <a href="https://wellfound.com/">
+              <a href="https://wellfound.com/" target="_blank">
                 <img src="images/angel.svg" alt="twiiter-icon"/>
               </a>
             </div>
@@ -143,7 +144,7 @@
           <button>CSS</button>
           <button>javaScript</button>
         </div>
-        <button class="see-project-desktop" id="desk-btn-1">See project</button>
+        <button class="see-project-desktop" id="desk-btn-1"><span class="desk-word-button">See project</span></button>
       </div>
     </div>
     <div class="work-card">
@@ -165,7 +166,7 @@
           <button>CSS</button>
           <button>javaScript</button>
         </div>
-        <button class="see-project-desktop" id="desk-btn-2">See project</button>
+        <button class="see-project-desktop" id="desk-btn-2"><span class="desk-word-button">See project</span></button>
       </div>
       <img class="card-image" src="images/real-word-d-2(fix).PNG" alt="">
     </div>
@@ -189,7 +190,7 @@
           <button>javaScript</button>
           <button>Webpack</button>
         </div>
-        <button class="see-project-desktop" id="desk-btn-3">See project</button>
+        <button class="see-project-desktop" id="desk-btn-3"><span class="desk-word-button">See project</span></button>
       </div>
     </div>
     <div class="work-card">
@@ -211,7 +212,7 @@
           <button>CSS</button>
           <button>javaScript</button>
         </div>
-        <button class="see-project-desktop" id="desk-btn-4">See project</button>
+        <button class="see-project-desktop" id="desk-btn-4"><span class="desk-word-button">See project</span></button>
       </div>
       <img class="card-image" src="images/real-word-d-4(main).PNG" alt="">
     </div>
@@ -316,23 +317,23 @@
             LET'S CONNECT
           </p>
           <div class="about-socials">
-            <a href="https://github.com/toyman640">
+            <a href="https://github.com/toyman640" target="_blank">
               <img src="images/github.svg" alt="twiiter-icon"/>
             </a>
-            <a href="https://www.linkedin.com/in/falako-omotoyosi-b86a1a169/">
+            <a href="https://www.linkedin.com/in/falako-omotoyosi-b86a1a169/" target="_blank">
               <img src="images/Linkedin icon.svg" alt="twiiter-icon"/>
             </a>
-            <a href="https://wellfound.com/">
+            <a href="https://wellfound.com/" target="_blank">
               <img src="images/angel.svg" alt="twiiter-icon"/>
             </a>
-            <a href="https://twitter.com/_@toyman">
+            <a href="https://twitter.com/@_toyman" target="_blank">
               <img src="images/twitter.svg" alt="twiiter-icon"/>
             </a>
-            <a href="https://medium.com/">
+            <a href="https://medium.com/" target="_blank">
               <img src="images/medium (2).svg" alt="twiiter-icon"/>
             </a>
           </div>
-          <button class="resume-button">Get my resume</button>
+          <button class="resume-button"><span class="desk-word-button"><a class="resume-link" href="https://drive.google.com/file/d/160t10GpK7PgN-gldqJ5gJMLjiiYvjf5y/view?usp=sharing" target="_blank">Get my resume</a></span></button>
         </div>
         <div class="desk-second-about">
           <ul class="about-stacks-desk">
@@ -353,12 +354,55 @@
                   <img class="lang-pic" src="images/css.svg" alt="">
                   <p>CSS</p>
                 </li>
+                <li>
+                  <img class="lang-pic" src="images/Python_(programming_language)-Logo.wine.svg" alt="">
+                  <p>Python</p>
+                </li>
               </ul>
             </li>
   
-            <li>Frameworks<span><img class="desk-about-angle" src="images/angle-right.svg" alt=""></li>
+            <li>Frameworks<span><img class="desk-about-angle" src="images/angle-right.svg" alt="">
+              <ul class="about-lang-desk">
+                <li>
+                  <img class="lang-pic" src="images/Ruby_on_Rails-Logo.wine.svg" alt="">
+                  <p>Ruby on Rails</p>
+                </li>
+                <li>
+                  <img class="lang-pic" src="images/Django_(web_framework)-Logo.wine.svg" alt="">
+                  <p>Django</p>
+                </li>
+              </ul>
+            </li>
               <img class="separator" src="images/Separator Bottom.svg" alt="">
-            <li>Skills<span><img class="desk-about-angle" src="images/angle-right.svg" alt=""></li>
+            <li>Skills<span><img class="desk-about-angle" src="images/angle-right.svg" alt="">
+              <ul class="skills-set">
+                <li >
+                  <button class="skills">Remote Pair-Programming</button>
+                  
+                </li>
+                <li>
+                  <button class="skills">Chrome Dev Tools</button>
+                </li>
+                <li>
+                  <button class="skills">Git</button>
+                </li>
+                <li>
+                  <button class="skills">Rspec</button>
+                </li>
+                <li>
+                  <button class="skills">Mentoring</button>
+                </li>
+                <li>
+                  <button class="skills">GitHub</button>
+                </li>
+                <li>
+                  <button class="skills">TDD</button>
+                </li>
+                <li>
+                  <button class="skills"> Heroku</button>
+                </li>
+              </ul>
+            </li>
               <img class="separator" src="images/Separator Bottom.svg" alt="">
           </ul>
         </div>
