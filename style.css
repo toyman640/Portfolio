@@ -902,6 +902,10 @@ button {
     margin: 4px;
   }
 
+  .animate__infinite {
+    --animate-duration: 0.5s;
+  }
+
   .navigation {
     display: flex;
     width: 80%;
