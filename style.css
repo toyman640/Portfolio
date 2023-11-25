@@ -260,11 +260,26 @@ body {
   margin-top: 8%;
 }
 
+.about-lang-desk-frame {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 8%;
+}
+
 .desk-about-angle {
   float: right;
 }
 
 .about-lang-desk li {
+  display: flex;
+  background-color: #f7f7f9;
+  font-weight: 500;
+  margin-top: 3%;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.about-lang-desk-frame li {
   display: flex;
   background-color: #f7f7f9;
   font-weight: 500;
@@ -451,6 +466,27 @@ button {
   text-decoration: none;
 }
 
+.skills-set {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  list-style: none;
+}
+
+.skills {
+  color: #6070ff;
+  padding: 4px 12px;
+  border-radius: 8px;
+  border: none;
+  margin: 4px;
+}
+
+.resume-link {
+  color: inherit;
+  text-decoration: none;
+}
+
 @media (min-width: 768px) {
   .keep {
     display: none;
@@ -539,7 +575,7 @@ button {
   }
 
   .works {
-    background-color: #dfe1e6;
+    background-color: #faf9f6;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -618,14 +654,14 @@ button {
     display: inline-block;
     padding-bottom:0.2em;
     background-image: linear-gradient(#6070ff 0 0);
-    background-position: 0 100%; /*OR bottom left*/
+    background-position: 0 100%;
     background-size: 0% 2px;
     background-repeat: no-repeat;
     transition: background-size 0.3s, background-position 0s 0.3s;
   }
 
   .desk-word-button:hover {
-    background-position: 100% 100%; /*OR bottom right*/
+    background-position: 100% 100%;
     background-size: 100% 2px;
   }
 
@@ -638,6 +674,7 @@ button {
   .card-content {
     padding: 20px;
     width: 50%;
+    padding-bottom: 30px;
   }
 
   .about-desk {
@@ -709,6 +746,23 @@ button {
     padding-left: 0;
     font-size: 0.938em;
     width: 100%;
+  }
+
+  .about-lang-desk-frame {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-left: 0;
+    font-size: 0.938em;
+    width: 100%;
+  }
+
+  .about-lang-desk-frame li {
+    background-color: #f7f7f9;
+    width: 24%;
+    padding: 2%;
+    border-radius: 8px;
+    margin-left: 1%;
   }
 
   .about-lang-desk li {
@@ -907,6 +961,15 @@ button {
     width: 80%;
     margin-left: 10%;
     justify-content: space-between;
+    position: sticky;
   }
+
+  .menu-section {
+    position: sticky;
+    top: 0; 
+    background-color: white;
+    z-index: 100;
+  }
+
 
 }
