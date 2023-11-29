@@ -1,855 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>
-      Portfolio - A web page contaninig info about me, projects i have done and
-      a form to reach me
-    </title>
-  </head>
-  <body>
-    <div class="rogue invisible">
-        <ul class="flex-column-m" >
-            <li class="ham-li" id="close"><button id="close_button"><img src="images/Icon-Cancel.svg" alt=""></button></li>
-            <li class="ham-li"><a href="#second-section">Portfolio</a> </li>
-            <li class="ham-li"><a href="#third-section">About</a></li>
-            <li class="ham-li"><a href="#contact-section">Contact</a></li>
-        </ul>
-    </div>
-    
-    <section class="first-section">
-       
-      <header class="header flex-row-m">
-        <a class="logo" href="http://">My Logo</a>
-        <nav class="nav-menu">
-          <a href="#" id="ham-btn"><img
-            class="ham"
-            src="images/hamburger.svg"
-            alt="hamburger icon for mobile menu-drop-down"
-            srcset="" /></a>
-            
-          <div>
-            <ul class="desk-menu flex-row">
-              <li class="item-1">Portfolio</li>
-              <li class="item-1">About</li>
-              <li class="item-1">Contact</li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-      <div class="intro flex-column">
-        <div class="content-section">
-          <h1 class="title">I’m Omotoyosi. Glad to see you!</h1>
-          <p class="intro-text">
-            I’m a software developer! I can help you build a product , feature
-            or website Look through some of my work and experience! If you like
-            what you see and have a project you need coded, don’t hesitate to
-            contact me.
-          </p>
-          <h4 class="connect">LET’S CONNECT</h4>
-          <ul class="socials flex-row-m">
-            <li class="first">
-              <a href="https://twitter.com/_@toyman"
-                ><img src="images/twitter.svg" alt="twiiter-icon"
-              /></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/falako-omotoyosi-b86a1a169/"
-                ><img
-                  src="images/Linkedin icon.svg"
-                  alt="Linkedin-icon"
-                  srcset=""
-              /></a>
-            </li>
-            <li>
-              <a href="https://medium.com/"
-                ><img src="images/medium (2).svg" alt="medium-icon" srcset=""
-              /></a>
-            </li>
-            <li>
-              <a href="https://github.com/toyman640"
-                ><img src="images/github.svg" alt="github-icon" srcset=""
-              /></a>
-            </li>
-            <li>
-              <a href="https://wellfound.com/"
-                ><img src="images/angel.svg" alt="angel-list-icon" srcset=""
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <div class="item works-1 pop invisible-pop" id="work-1">
-      <div class="card-content pop-main">
-        <img class="pop-close" src="images/pop-close.svg" alt="">
-        <h3 class="title-1"></h3>
-        <ul class="track">
-          <li class="live"></li>
-          <li>
-            <img
-              src="images/Counter.svg"
-              alt="bullet-point-counter"
-              srcset="" />
-          </li>
-          <li></li>
-          <li>
-            <img
-              src="images/Counter.svg"
-              alt="bullet-point-counter"
-              srcset="" />
-          </li>
-          <li</li>
-        </ul>
-        <img src="" alt="template-image" srcset="" />
-       
-        <p class="some-text pop-text">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
-        </p>
-        <ul class="stacks">
-          <li>
-            <button class="stack-button"><a href="http://"> HTML</a></button>
-          </li>
-          <li>
-            <button class="stack-button"><a href="http://"> CSS</a></button>
-          </li>
-          <li>
-            <button class="stack-button">
-              <a href="http://">JavaScript</a>
-            </button>
-          </li>
-        </ul>
-        <img src="images/pop-hr.svg" alt="">
-        <button class="see-proj-pop">
-          <a class="project-link" href="">See live <img src="images/see-live-logo.svg" alt=""></a>
-        </button>
-        <button class="see-proj-pop">
-          <a class="project-link" href="">See source <img src="images/see-source-logo.svg" alt=""></a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+  <div class="ham-menu keep">
+    <button class="pop-close" id="close-menu">
+      <img src="images/Icon-Cancel.svg" alt="">
+    </button>
+    <ul class="ham-items">
+      <li><a class="menu-item" href="#intro">Portfolio</a></li>
+      <li><a class="menu-item" href="#about">About</a></li>
+      <li><a class="menu-item"  href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <section class="mobile-popup hide-pop">
+    <div class="main-pop">
+      <div class="pop-top-part">
+        <h3 class="mobile-pop-title"></h3>
+        <button id="close-mobile-pop">
+          <img class="pop-close-mobile" src="images/pop-close.svg" alt="">
         </button>
       </div>
-    </div>
-    <section class="second-section toggle-section" id="second-section">
-      <div class="item works-1">
-        <div class="card-content">
-          <img src="images/works-1.svg" alt="template-image" srcset="" />
-          <h3 class="title-1">Tonic</h3>
-          <ul class="track">
-            <li class="live">CANOPY</li>
-            <li>
-              <img
-                src="images/Counter.svg"
-                alt="bullet-point-counter"
-                srcset="" />
-            </li>
-            <li>Back End Dev</li>
-            <li>
-              <img
-                src="images/Counter.svg"
-                alt="bullet-point-counter"
-                srcset="" />
-            </li>
-            <li>2015</li>
-          </ul>
-          <p class="some-text">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="stacks">
-            <li>
-              <button class="stack-button"><a href="http://"> HTML</a></button>
-            </li>
-            <li>
-              <button class="stack-button"><a href="http://"> CSS</a></button>
-            </li>
-            <li>
-              <button class="stack-button">
-                <a href="http://">JavaScript</a>
-              </button>
-            </li>
-          </ul>
-          <button class="see-proj">
-            <a class="project-link" id="button-1" href="#">See project</a>
-          </button>
-        </div>
-      </div>
-      
-      <div class="item works-2">
-        <div class="card-content">
-          <img src="images/works-2.svg" alt="template-image" srcset="" />
-          <h3 class="title-1">
-            Multi-Post <br />
-            Stories
-          </h3>
-          <ul class="track">
-            <li class="live">CANOPY</li>
-            <li>
-              <img
-                src="images/Counter.svg"
-                alt="bullet-point-counter"
-                srcset="" />
-            </li>
-            <li>Back End Dev</li>
-            <li>
-              <img
-                src="images/Counter.svg"
-                alt="bullet-point-counter"
-                srcset="" />
-            </li>
-            <li>2015</li>
-          </ul>
-          <p class="some-text">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="stacks">
-            <li>
-              <button class="stack-button"><a href="http://"> HTML</a></button>
-            </li>
-            <li>
-              <button class="stack-button"><a href="http://"> CSS</a></button>
-            </li>
-            <li>
-              <button class="stack-button">
-                <a href="http://">JavaScript</a>
-              </button>
-            </li>
-          </ul>
-          <button class="see-proj">
-            <a class="project-link" id="button-2" href="#">See project</a>
-          </button>
-        </div>
-      </div>
-      <div class="item works-3">
-        <div class="card-content">
-          <img src="images/works-3.svg" alt="template-image" srcset="" />
-          <h3 class="title-1">Tonic</h3>
-          <ul class="track">
-            <li class="live">CANOPY</li>
-            <li>
-              <img
-                src="images/Counter.svg"
-                alt="bullet-point-counter"
-                srcset="" />
-            </li>
-            <li>Back End Dev</li>
-            <li>
-              <img
-                src="images/Counter.svg"
-                alt="bullet-point-counter"
-                srcset="" />
-            </li>
-            <li>2015</li>
-          </ul>
-          <p class="some-text">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="stacks">
-            <li>
-              <button class="stack-button"><a href="http://"> HTML</a></button>
-            </li>
-            <li>
-              <button class="stack-button"><a href="http://"> CSS</a></button>
-            </li>
-            <li>
-              <button class="stack-button">
-                <a href="http://">JavaScript</a>
-              </button>
-            </li>
-          </ul>
-          <button class="see-proj">
-            <a class="project-link " id="button-3" href="#">See project</a>
-          </button>
-        </div>
-      </div>
-      <div class="item works-4">
-        <div class="card-content">
-          <img src="images/works-4.svg" alt="template-image" srcset="" />
-          <h3 class="title-1">
-            Multi-Post <br />
-            Stories
-          </h3>
-          <ul class="track">
-            <li class="live">CANOPY</li>
-            <li>
-              <img
-                src="images/Counter.svg"
-                alt="bullet-point-counter"
-                srcset="" />
-            </li>
-            <li>Back End Dev</li>
-            <li>
-              <img
-                src="images/Counter.svg"
-                alt="bullet-point-counter"
-                srcset="" />
-            </li>
-            <li>2015</li>
-          </ul>
-          <p class="some-text">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="stacks">
-            <li>
-              <button class="stack-button"><a href="http://"> HTML</a></button>
-            </li>
-            <li>
-              <button class="stack-button"><a href="http://"> CSS</a></button>
-            </li>
-            <li>
-              <button class="stack-button">
-                <a href="http://">JavaScript</a>
-              </button>
-            </li>
-          </ul>
-          <button class="see-proj">
-            <a class="project-link" id="button-4" href="#">See project</a>
-          </button>
-        </div>
-      </div>
-    </section>
-    <div class="desk-pop desk-content-gone pop-mobile">
-      <div class="pop-content">
-        <h3 class=" pop-title"></h3>
-         <img class="pop-close" id="desk-pop-close" src="images/pop-close.svg" alt="">
-        
-        <ul class="pop-work-his">
-          <li class="live"></li>
-          <li>
-            <img
-              src="images/Counter.svg"
-              alt="bullet-point-counter"
-              srcset="" />
-          </li>
-          <li class="rest-li"></li>
-          <li>
-            <img
-              src="images/Counter.svg"
-              alt="bullet-point-counter"
-              srcset="" />
-          </li>
-          <li class="rest-li"></li>
-        </ul>
-        <img
-        class="card-sections works-img"
-        src=""
-        alt="project-screenshot" />
-        <div class="desk-pop-down">
-          <p class="pop-text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.  
-          </p>
-          <ul class="desk-pop-list">
-            <li>
-              <button class="desk-stack-button pop-button">
-                <a href="http://"> HTML</a>
-              </button>
-            </li>
-            <li>
-              <button class="desk-stack-button pop-button">
-                <a href="http://"> CSS</a>
-              </button>
-            </li>
-            <li>
-              <button class="desk-stack-button pop-button">
-                <a href="http://">JavaScript</a>
-              </button>
-            </li>
-          </ul>
-          <div class="pop-ref">
-            <button class="desk-see-proj desk-pop-button">
-              <a class="desk-project-link desk-pop-link" href="">See live <img src="images/see-live-logo.svg" alt=""></a>
-            </button>
-            <button class="desk-see-proj desk-pop-button">
-              <a class="desk-project-link desk-pop-link" href="">See source <img src="images/see-source-logo.svg" alt=""></a>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <section class="desk-works flex-column for-desktop">
-      <div class="works-card">
-        <img
-          class="card-sections works-img"
-          src="images/new-proj.png"
-          alt="project-screenshot" />
-        <div class="card-sections works-content">
-          <h3 class="works-d-title">Tonic</h3>
-          <ul class="work-info">
-            <li class="live">CANOPY</li>
-            <li>
-              <img
-                src="images/Counter.svg"
-                alt="bullet-point-counter"
-                srcset="" />
-            </li>
-            <li>Back End Dev</li>
-            <li>
-              <img
-                src="images/Counter.svg"
-                alt="bullet-point-counter"
-                srcset="" />
-            </li>
-            <li>2015</li>
-          </ul>
-          <p class="works-text">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="desk-stacks flex-row">
-            <li>
-              <button class="desk-stack-button">
-                <a href="http://"> HTML</a>
-              </button>
-            </li>
-            <li>
-              <button class="desk-stack-button">
-                <a href="http://"> CSS</a>
-              </button>
-            </li>
-            <li>
-              <button class="desk-stack-button">
-                <a href="http://">JavaScript</a>
-              </button>
-            </li>
-          </ul>
-          <button class="desk-see-proj">
-            <a class="desk-project-link" id="desk-btn-1" href="https://github.com/toyman640/Agro-Summit.git">See project</a>
-          </button>
-        </div>
-      </div>
-      <div class="works-card">
-        <div class="card-sections works-content">
-          <h3 class="works-d-title">Multi-Post Stories</h3>
-          <ul class="work-info">
-            <li class="live">FACEBOOK</li>
-            <li>
-              <img
-                src="images/Counter.svg"
-                alt="bullet-point-counter"
-                srcset="" />
-            </li>
-            <li>Full Stack Dev</li>
-            <li>
-              <img
-                src="images/Counter.svg"
-                alt="bullet-point-counter"
-                srcset="" />
-            </li>
-            <li>2015</li>
-          </ul>
-          <p class="works-text">
-            Experimental content creation feature that allows users to add to an
-            existing story over the course of a day without spamming their
-            friends.
-          </p>
-          <ul class="desk-stacks2 flex-row">
-            <li>
-              <button class="desk-stack-button">
-                <a href="http://"> HTML</a>
-              </button>
-            </li>
-            <li>
-              <button class="desk-stack-button">
-                <a href="http://"> CSS</a>
-              </button>
-            </li>
-            <li>
-              <button class="desk-stack-button">
-                <a href="http://"> Ruby on rails</a>
-              </button>
-            </li>
-            <li>
-              <button class="desk-stack-button">
-                <a href="http://">JavaScript</a>
-              </button>
-            </li>
-          </ul>
-          <button class="desk-see-proj">
-            <a class="desk-project-link" id="desk-btn-2" href="">See project</a>
-          </button>
-        </div>
-        <img
-          class="card-sections works-img"
-          src="images/works-img-2.svg"
-          alt="" />
-      </div>
-      <div class="works-card third-card">
-        <img
-          class="card-sections works-img"
-          src="images/works-img-3.svg"
-          alt="project-screenshot" />
-        <div class="card-sections works-content">
-          <h3 class="works-d-title">Facebook 360</h3>
-          <ul class="work-info">
-            <li class="live">FACEBOOK</li>
-            <li>
-              <img
-                src="images/Counter.svg"
-                alt="bullet-point-counter"
-                srcset="" />
-            </li>
-            <li>Full Stack Dev</li>
-            <li>
-              <img
-                src="images/Counter.svg"
-                alt="bullet-point-counter"
-                srcset="" />
-            </li>
-            <li>2015</li>
-          </ul>
-          <p class="works-text">
-            Exploring the future of media in Facebook's first Virtual Reality
-            app; a place to discover and enjoy 360 photos and videos on Gear VR.
-          </p>
-          <ul class="desk-stacks2 flex-row">
-            <li>
-              <button class="desk-stack-button">
-                <a href="http://"> HTML</a>
-              </button>
-            </li>
-            <li>
-              <button class="desk-stack-button">
-                <a href="http://"> CSS</a>
-              </button>
-            </li>
-            <li>
-              <button class="desk-stack-button">
-                <a href="http://"> Ruby on rails</a>
-              </button>
-            </li>
-            <li>
-              <button class="desk-stack-button">
-                <a href="http://">JavaScript</a>
-              </button>
-            </li>
-          </ul>
-          <button class="desk-see-proj">
-            <a class="desk-project-link" id="desk-btn-3" href="#">See project</a>
-          </button>
-        </div>
-      </div>
-      <div class="works-card">
-        <div class="card-sections works-content">
-          <h3 class="works-d-title">Uber Navigation</h3>
-          <ul class="work-info">
-            <li class="live">Uber</li>
-            <li>
-              <img
-                src="images/Counter.svg"
-                alt="bullet-point-counter"
-                srcset="" />
-            </li>
-            <li>Lead Developer</li>
-            <li>
-              <img
-                src="images/Counter.svg"
-                alt="bullet-point-counter"
-                srcset="" />
-            </li>
-            <li>2018</li>
-          </ul>
-          <p class="works-text">
-            A smart assistant to make driving more safe, efficient, and fun by
-            unlocking your most expensive computer: your car.
-          </p>
-          <ul class="desk-stacks2 flex-row">
-            <li>
-              <button class="desk-stack-button">
-                <a href="http://"> HTML</a>
-              </button>
-            </li>
-            <li>
-              <button class="desk-stack-button">
-                <a href="http://"> CSS</a>
-              </button>
-            </li>
-            <li>
-              <button class="desk-stack-button">
-                <a href="http://"> Ruby on rails</a>
-              </button>
-            </li>
-            <li>
-              <button class="desk-stack-button">
-                <a href="http://">JavaScript</a>
-              </button>
-            </li>
-          </ul>
-          <button class="desk-see-proj">
-            <a class="desk-project-link" id="desk-btn-4" href="#">See project</a>
-          </button>
-        </div>
-        <img
-          class="card-sections works-img"
-          src="images/works-img-4.svg"
-          alt="" />
-      </div>
-    </section>
-    <section class="third-section toggle-section" id="third-section">
-      <div class="content">
-        <p class="about">About Myself</p>
-        <p class="about-info">
-          Hello I’m a software developer! I can help you build a product ,
-          feature or website. Look through some of my work and experience! If
-          you like what you see and have a project you need coded, don’t
-          hesitate to contact me.
-        </p>
-
-        <h4 class="connect">LET’S CONNECT</h4>
-        <ul class="socials flex-row-m">
-          <li class="first">
-            <a href="https://github.com/toyman640"
-              ><img src="images/github.svg" alt="github-icon" srcset=""
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/falako-omotoyosi-b86a1a169/"
-              ><img
-                src="images/Linkedin icon.svg"
-                alt="Linkedin-icon"
-                srcset=""
-            /></a>
-          </li>
-          <li>
-            <a href="https://wellfound.com/"
-              ><img src="images/angel.svg" alt="angel-list-icon" srcset=""
-            /></a>
-          </li>
-
-          <li>
-            <a href="https://twitter.com/_@toyman"
-              ><img src="images/twitter.svg" alt="twiiter-icon"
-            /></a>
-          </li>
-          <li>
-            <a href="https://medium.com/"
-              ><img src="images/medium (2).svg" alt="medium-icon" srcset=""
-            /></a>
-          </li>
-        </ul>
-        <button class="cv-button">
-          <a class="cv-link" href="">Get my resume</a>
-        </button>
-      </div>
-      <ul class="about-list">
-        <li>
-          Languages
-          <span class="angle"><img src="images/angle-down.svg" alt="" /></span>
-          <ul class="real-stack">
-            <li>
-              <img src="images/js.svg" alt="javascript icon" /><span
-                class="words-1"
-                >Javascript</span
-              >
-            </li>
-            <li>
-              <img src="images/html.svg" alt="HTML icon" /><span class="words-1"
-                >HTML</span
-              >
-            </li>
-            <li>
-              <img src="images/css.svg" alt="CSS icon" /><span class="words-1"
-                >CSS</span
-              >
-            </li>
-          </ul>
-        </li>
-
-        <li>
-          Frameworks<span class="angle"
-            ><img src="images/angle-right.svg" alt="angel right icon "
-          /></span>
-        </li>
-        <img
-          src="images/Separator Bottom.svg"
-          alt="horizontal-line"
-          srcset="" />
-        <li>
-          Skills<span class="angle"
-            ><img src="images/angle-right.svg" alt="angel right icon"
-          /></span>
-        </li>
-        <img
-          class="last-line"
-          src="images/Separator Bottom.svg"
-          alt="horizontal-line"
-          srcset="" />
+      <ul class="mobile-pop-exp">
+        <li class="current-exp-pop"></li>
+        <li><img src="images/Counter.svg" alt=""></li>
+        <li></li>
+        <li><img src="images/Counter.svg" alt=""></li>
+        <li></li>
       </ul>
-    </section>
-    <section class="desk-about for-desktop">
-      <div class="desk-about-content">
-        <div class="content-side1">
-          <p class="deskabout">About Myself</p>
-          <p class="deskabout-info">
-            Hello I’m a software developer! I can help you build a product ,
-            feature or website. Look through some of my work and experience! If
-            you like what you see and have a project you need coded, don’t
-            hesitate to contact me.
-          </p>
+      <img class="mobile-pop-img" src="" alt="">
+      <p class="pop-proj-desc">
+      </p>
+      <div class="mobile-pop-stacks">
+      </div>
+      <div class="mobile-pop-links">
+        <a href="" class="mobile-pop-link">
+          <button class="pop-links">See live <img src="images/see-live-logo.svg" alt=""></button>
+        </a>
+        <a href="" class="mobile-pop-link">
+          <button class="pop-links">See source <img src="images/github.svg" alt=""></button>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="desktop-pop hide-desk-pop">
+    <div class="desk-main-pop">
+      <div class="deskpop-top">
+        <h2 class="deskpop-title"></h2>
+        <button class="deskpop-close" id="desk-pop-close">
+          <img src="images/pop-close.svg" alt="">
+        </button>
+      </div>
+      <ul class="deskpop-exp">
+        <li></li>
+        <li><img src="images/Counter.svg" alt=""></li>
+        <li></li>
+        <li><img src="images/Counter.svg" alt=""></li>
+        <li></li>
+      </ul>
+      <img class="deskpop-img" src="" alt="">
+      <div class="deskpop-bottom">
+        <p class="deskpop-desc">
+         
+        </p>
+        <div>
+          <div class="deskpop-stacks-button">
+          </div>
+          <a class="deskpop-a" href="" target="_blank" rel="noopener">
+            <button class="deskpop-links"> See live <img src="images/see-live-logo.svg" alt=""/></button>
+          </a>
+          <a class="deskpop-a" href="" target="_blank" rel="noopener">
 
-          <h4 class="deskconnect">LET’S CONNECT</h4>
-          <ul class="desksocials">
-            <li class="first">
-              <a href="https://github.com/toyman640"
-                ><img src="images/github.svg" alt="github-icon" srcset=""
-              /></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/falako-omotoyosi-b86a1a169/"
-                ><img
-                  src="images/Linkedin icon.svg"
-                  alt="Linkedin-icon"
-                  srcset=""
-              /></a>
-            </li>
-            <li>
-              <a href="https://wellfound.com/"
-                ><img src="images/angel.svg" alt="angel-list-icon" srcset=""
-              /></a>
-            </li>
-
-            <li>
-              <a href="https://twitter.com/_@toyman"
-                ><img src="images/twitter.svg" alt="twiiter-icon"
-              /></a>
-            </li>
-            <li>
-              <a href="https://medium.com/"
-                ><img src="images/medium (2).svg" alt="medium-icon" srcset=""
-              /></a>
-            </li>
-          </ul>
-          <button class="cv-button">
-            <a class="cv-link" href="">Get my resume</a>
-          </button>
+            <button class="deskpop-links">See source <img src="images/see-source-logo.svg" alt=""></button>
+          </a>
         </div>
-        <div class="desk-about-content2">
-          <ul class="about-list">
+      </div>
+    </div>
+  </section>
+  <section class="menu-section">
+    <nav class="navigation">
+      <p class="logo">My Logo</p>
+      <img class="hamburger" id="ham-btn" src="images/hamburger.svg" id="ham-btn" alt="" srcset="">
+      <ul class="desk-menu">
+        <li><a  href="#intro"><span class="desk-word-button">Portfolio</span> </a></li>
+        <li ><a href="#about"><span class="desk-word-button">About</span></a></li>
+        <li><a href="#contact"><span class="desk-word-button">Contact</span></a></li>
+      </ul>
+    </nav>
+  </section>
+  <section class="cover-all">
+
+ 
+  
+    <section class="intro-wrap">
+      <section class="intro-cover" id="intro">
+        <div class="introduction">
+    
+          <div class="content-section">
+            <h1 class="greet animate__animated animate__slideInRight" >Hi, I'm Omotoyosi.<br> Thanks for visiting!</h1>
+            <p class="foreword">Full-stack developer with practical, hands-on learning experience in building applications for both individuals and businesses<p>
+            <p class="connect">LET'S CONNECT</p>
+            <div class="header-socials">
+              <a href="https://twitter.com/@_toyman" target="_blank" rel="noopener">
+                <img src="images/twitter.svg" alt="twiiter-icon"/>
+              </a>
+              <a href="https://www.linkedin.com/in/falako-omotoyosi-b86a1a169/" target="_blank" rel="noopener">
+                <img src="images/Linkedin icon.svg" alt="twiiter-icon"/>
+              </a>
+              <a href="https://medium.com/" target="_blank" rel="noopener">
+                <img src="images/medium (2).svg" alt="twiiter-icon"/>
+              </a>
+              <a href="https://github.com/toyman640" target="_blank" rel="noopener">
+                <img src="images/github.svg" alt="twiiter-icon"/>
+              </a>
+              <a href="https://wellfound.com/" target="_blank" rel="noopener">
+                <img src="images/angel.svg" alt="twiiter-icon"/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </section>
+  <section class="works toggle-section">
+    <div class="work-card">
+      <img class="card-image" src="images/real-work-d-1.png" alt="">
+      <div class="card-content">
+        <h2 class="card-title">AG SUMMIT</h2>
+        <ul class="card-experience">
+          <li class="exp-first">AGRICULTURE</li>
+          <li><img src="images/Counter.svg" alt=""></li>
+          <li>SUMMIT</li>
+          <li><img src="images/Counter.svg" alt=""></li>
+          <li>2023</li>
+        </ul>
+        <p class="work-desc">A web application designed to inform prospective delegates about the program of an upcoming summit.</p>
+        <div class="stacks">
+          <button>html</button>
+          <button>CSS</button>
+          <button>javaScript</button>
+        </div>
+        <button class="see-project-desktop" id="desk-btn-1"><span class="desk-word-button">See project</span></button>
+      </div>
+    </div>
+    <div class="work-card">
+      <div class="card-content">
+        <h2 class="card-title">Budget Application</h2>
+        <ul class="card-experience">
+          <li class="exp-first">KOWOPE</li>
+          <li><img src="images/Counter.svg" alt=""></li>
+          <li>FINANCE</li>
+          <li><img src="images/Counter.svg" alt=""></li>
+          <li>BUDGET</li>
+        </ul>
+        <p class="work-desc">
+          Create a mobile-view-only web application where users can sign up, establish budget categories, and log expenses corresponding to each category.
+        </p>
+        <div class="stacks">
+          <button>html</button>
+          <button>Ruby on rails</button>
+          <button>CSS</button>
+          <button>javaScript</button>
+        </div>
+        <button class="see-project-desktop" id="desk-btn-2"><span class="desk-word-button">See project</span></button>
+      </div>
+      <img class="card-image" src="images/real-word-d-2(fix).PNG" alt="">
+    </div>
+    <div class="work-card">
+      <img class="card-image" src="images/real-word-d-3.PNG" alt="">
+      <div class="card-content">
+        <h2 class="card-title">Meal Recipe</h2>
+        <ul class="card-experience">
+          <li class="exp-first">MEALS</li>
+          <li><img src="images/Counter.svg" alt=""></li>
+          <li>INGREDIENTS</li>
+          <li><img src="images/Counter.svg" alt=""></li>
+          <li>LIKES AND COMMENTS</li>
+        </ul>
+        <p class="work-desc">
+          Develop a desktop webpage that consumes an API, presenting users with a variety of international dishes along with their corresponding ingredients. Users can interact by liking meals and leaving comments for each dish.
+        </p>
+        <div class="stacks">
+          <button>html</button>
+          <button>CSS</button>
+          <button>javaScript</button>
+          <button>Webpack</button>
+        </div>
+        <button class="see-project-desktop" id="desk-btn-3"><span class="desk-word-button">See project</span></button>
+      </div>
+    </div>
+    <div class="work-card">
+      <div class="card-content">
+        <h2 class="card-title">Farm hub</h2>
+        <ul class="card-experience">
+          <li class="exp-first">Census</li>
+          <li><img src="images/Counter.svg" alt=""></li>
+          <li>Chart</li>
+          <li><img src="images/Counter.svg" alt=""></li>
+          <li>Records</li>
+        </ul>
+        <p class="work-desc">.
+          Create a Python-based web application designed to manage and track essential data related to animal populations. The application will facilitate the recording of animal population metrics, including mortality and births, while also maintaining detailed records for various departments involved in the management of these populations.
+        </p>
+        <div class="stacks">
+          <button>html</button>
+          <button>Django</button>
+          <button>CSS</button>
+          <button>javaScript</button>
+        </div>
+        <button class="see-project-desktop" id="desk-btn-4"><span class="desk-word-button">See project</span></button>
+      </div>
+      <img class="card-image" src="images/real-word-d-4(main).PNG" alt="">
+    </div>
+  </section>
+  <section class="mobile-works ">
+    <div class="mobile-works-card toggle-section">
+      <img class="card-img-mobile" src="images/real-work-d-1.png" alt="">
+      <h2 class="mobile-card-title">AG SUMMIT</h2>
+      <ul class="mobile-exp">
+        <li class="current-exp">AGRICULTURE</li>
+        <li><img src="images/Counter.svg" alt=""></li>
+        <li>SUMMIT</li>
+        <li><img src="images/Counter.svg" alt=""></li>
+        <li>2023</li>
+      </ul>
+      <p class="mobile-card-word">
+        A web application designed to inform prospective delegates about the program of an upcoming summit.
+      </p>
+      <div>
+        <button class="mobile-stacks-button">HTML</button>
+        <button class="mobile-stacks-button">CSS</button>
+        <button class="mobile-stacks-button">JavaScript</button>
+      </div>
+      <button class="see-proj-mobile" id="button-1">See project</button>
+    </div>
+    <div class="mobile-works-card toggle-section">
+      <img class="card-img-mobile" src="images/real-word-d-2(fix).PNG" alt="">
+      <h2 class="mobile-card-title">Budget App.</h2>
+      <ul class="mobile-exp">
+        <li class="current-exp">KOWOPE</li>
+        <li><img src="images/Counter.svg" alt=""></li>
+        <li>FINANCE</li>
+        <li><img src="images/Counter.svg" alt=""></li>
+        <li>BUDGET</li>
+      </ul>
+      <p class="mobile-card-word">
+        Create a mobile-view-only web application where users can sign up, establish budget categories, and log expenses corresponding to each category.
+      </p>
+      <div>
+        <button class="mobile-stacks-button">HTML</button>
+        <button class="mobile-stacks-button">CSS</button>
+        <button class="mobile-stacks-button">JavaScript</button>
+        <button class="mobile-stacks-button">Ruby on rails</button>
+      </div>
+      <button class="see-proj-mobile" id="button-2">See project</button>
+    </div>
+    <div class="mobile-works-card toggle-section">
+      <img class="card-img-mobile" src="images/real-word-d-3.PNG" alt="">
+      <h2 class="mobile-card-title">Meal Recipe</h2>
+      <ul class="mobile-exp">
+        <li class="current-exp">MEALS</li>
+        <li><img src="images/Counter.svg" alt=""></li>
+        <li>INGREDIENTS</li>
+        <li><img src="images/Counter.svg" alt=""></li>
+        <li>LIKES</li>
+        <li><img src="images/Counter.svg" alt=""></li>
+        <li>Comment</li>
+      </ul>
+      <p class="mobile-card-word">
+        Develop a desktop webpage that consumes an API, presenting users with a variety of international dishes along with their corresponding ingredients. Users can interact by liking meals and leaving comments for each dish.
+      </p>
+      <div>
+        <button class="mobile-stacks-button">HTML</button>
+        <button class="mobile-stacks-button">CSS</button>
+        <button class="mobile-stacks-button">JavaScript</button>
+        <button class="mobile-stacks-button">Webpack</button>
+      </div>
+      <button class="see-proj-mobile" id="button-3">See project</button>
+    </div>
+    <div class="mobile-works-card toggle-section">
+      <img class="card-img-mobile" src="images/real-word-d-4(main).PNG" alt="">
+      <h2 class="mobile-card-title">Farm hub</h2>
+      <ul class="mobile-exp">
+        <li class="current-exp">Census</li>
+        <li><img src="images/Counter.svg" alt=""></li>
+        <li>Chart</li>
+        <li><img src="images/Counter.svg" alt=""></li>
+        <li>Records</li>
+      </ul>
+      <p class="mobile-card-word">
+        Create a Python-based web application designed to manage and track essential data related to animal populations. The application will facilitate the recording of animal population metrics, including mortality and births, while also maintaining detailed records for various departments involved in the management of these populations.
+      </p>
+      <div>
+        <button class="mobile-stacks-button">HTML</button>
+        <button class="mobile-stacks-button">CSS</button>
+        <button class="mobile-stacks-button">JavaScript</button>
+        <button class="mobile-stacks-button">Django</button>
+      </div>
+      <button class="see-proj-mobile" id="button-4">See project</button>
+    </div>
+  </section>
+
+  <section class="about-cover">
+    <section class="about-desk toggle-section">
+      <div class="main-part" id="about">
+        <div class="desk-first-about">
+          <h3 class="about-title">About Myself</h3>
+          <p class="about-word">
+            Hello I’m a software developer! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
+          </p>
+          <p class="connect">
+            LET'S CONNECT
+          </p>
+          <div class="about-socials">
+            <a href="https://github.com/toyman640" target="_blank" rel="noopener">
+              <img src="images/github.svg" alt="twiiter-icon"/>
+            </a>
+            <a href="https://www.linkedin.com/in/falako-omotoyosi-b86a1a169/" target="_blank" rel="noopener">
+              <img src="images/Linkedin icon.svg" alt="twiiter-icon"/>
+            </a>
+            <a href="https://wellfound.com/" target="_blank" rel="noopener">
+              <img src="images/angel.svg" alt="twiiter-icon"/>
+            </a>
+            <a href="https://twitter.com/@_toyman" target="_blank" rel="noopener">
+              <img src="images/twitter.svg" alt="twiiter-icon"/>
+            </a>
+            <a href="https://medium.com/" target="_blank" rel="noopener">
+              <img src="images/medium (2).svg" alt="twiiter-icon"/>
+            </a>
+          </div>
+          <button class="resume-button"><span class="desk-word-button"><a class="resume-link" href="https://drive.google.com/file/d/160t10GpK7PgN-gldqJ5gJMLjiiYvjf5y/view?usp=sharing" target="_blank" rel="noopener">Get my resume</a></span></button>
+        </div>
+        <div class="desk-second-about">
+          <ul class="about-stacks-desk">
             <li>
-              Languages
-              <span class="angle"
-                ><img src="images/angle-down.svg" alt="angle-down icon"
-              /></span>
-              <ul class="desk-real-stack">
+              Languages <span><img class="desk-about-angle" src="images/angle-down.svg" alt=""></span>
+              <ul class="about-lang-desk">
                 <li>
-                  <img src="images/js.svg" alt="javascript-icon" /><br />
-                  <span class="words-1">Javascript</span>
+                  <img class="lang-pic" src="images/js.svg" alt="">
+                  <p>JavaScript</p>
+                </li>
+               
+                <li>
+                  <img class="lang-pic" src="images/html.svg" alt="">
+                  <p>HTML</p>
+                </li>
+               
+                <li>
+                  <img class="lang-pic" src="images/css.svg" alt="">
+                  <p>CSS</p>
                 </li>
                 <li>
-                  <img src="images/html.svg" alt="html-icon" /><span class="words-1"
-                    >HTML</span
-                  >
-                </li>
-                <li>
-                  <img src="images/css.svg" alt="css-icon" /><span class="words-1"
-                    >CSS</span
-                  >
+                  <img class="lang-pic" src="images/Python_(programming_language)-Logo.wine.svg" alt="">
+                  <p>Python</p>
                 </li>
               </ul>
             </li>
-
-            <li>
-              Frameworks<span class="angle"
-                ><img src="images/angle-right.svg" alt="angle-right icon"
-              /></span>
+            <img class="separator" src="images/Separator Bottom.svg" alt="">
+            <li>Frameworks<span><img class="desk-about-angle" src="images/angle-down.svg" alt=""></span>
+              <ul class="about-lang-desk-frame">
+                <li>
+                  <img class="lang-pic" src="images/Ruby_on_Rails-Logo.wine.svg" alt="">
+                  <p>Ruby on Rails</p>
+                </li>
+                <li>
+                  <p>Django</p>
+                </li>
+                <li>
+                  <img class="lang-pic" src="images/347290.svg" alt="">
+                  <p>Rspec</p>
+                </li>
+                <li>
+                  <p>Capybara</p>
+                </li>
+              </ul>
             </li>
-            <img src="images/Separator Bottom.svg" alt="horizontal-line" srcset="" />
-            <li>
-              Skills<span class="angle"
-                ><img src="images/angle-right.svg" alt="angle-right icon"
-              /></span>
+              <img class="separator" src="images/Separator Bottom.svg" alt="">
+            <li>Skills<span><img class="desk-about-angle" src="images/angle-down.svg" alt=""></span>
+              <ul class="skills-set">
+                <li >
+                  <button class="skills animate__animated animate__fadeIn animate__slow">Remote Pair-Programming</button>
+                  
+                </li>
+                <li>
+                  <button class="skills animate__animated animate__fadeIn animate__slow">Chrome Dev Tools</button>
+                </li>
+                <li>
+                  <button class="skills animate__animated animate__fadeIn animate__slow">Git</button>
+                </li>
+                <li>
+                  <button class="skills animate__animated animate__fadeIn animate__slow">Mentoring</button>
+                </li>
+                <li>
+                  <button class="skills animate__animated animate__fadeIn animate__slow">GitHub</button>
+                </li>
+                <li>
+                  <button class="skills animate__animated animate__fadeIn animate__slow">TDD</button>
+                </li>
+                <li>
+                  <button class="skills animate__animated animate__fadeIn animate__slow"> Heroku</button>
+                </li>
+              </ul>
             </li>
-            <img
-              class="last-line"
-              src="images/Separator Bottom.svg"
-              alt="horizontal-line"
-              srcset="" />
+              <img class="separator" src="images/Separator Bottom.svg" alt="">
           </ul>
         </div>
       </div>
-    </section>
-    <section class="contact-section flex-column toggle-section for-desktop" id="contact-section">
-      <div class="content-form">
-        <h3 class="contact-head">Contact me</h3>
-        <p class="contact-text">
-          If you have an application you are interested in developing, a feature
-          that you need built or a project that needs coding. I’d love to help
-          with it!
-        </p>
-        <form action="https://formspree.io/f/xbjezrzn" id="mobile-form" method="POST">
-          <div class="fields">
-            <input
-              name="name"
-              id="name1"
-              type="text"
-              maxlength="30"
-              placeholder="John Doe"
-              required />
-            <input
-              type="email"
-              name="email"
-              id="email1"
-              class="mobile-mail"
-              placeholder="loremipsum@gmail.com"
-              required />
-            <textarea
-              maxlength="500"
-              id="message1"
-              cols="30"
-              rows="10"
-              placeholder="Write your message here..."
-              required></textarea>
+      <section class="contact-section" id="contact">
+        <div class="contact-content-part">
+          <h2 class="contact-title">Contact me</h2>
+          <p class="contact-foreword">
+            If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it!
+          </p>
+          <form action="https://formspree.io/f/xbjezrzn" method="POST" class="contact-form">
+            <input name="name" class="text-fields" type="text" placeholder="John Doe">
+            <input name="email" class="text-fields" type="email" id="email" placeholder="loremipsum@gmail.com">
+            <textarea name="message" class="text-fields" id="" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+            <button class="form-button" type="submit" id="form-sub">Get In touch</button>
+          </form>
+          <div class="div-msg invisible">
+
+            <p class="validation-message">hello</p>
           </div>
-          <button class="contact-button" id="form-sub" type="submit">
-            <span class="contact-link">Get in touch</span>
-          </button>
-          <div class="div-msg invisible"><p class="validation-messg"></p></div>
-        </form>
-      </div>
-      <div class="contact-desk">
-        <h3 class="contact-head">Contact me</h3>
-        <p class="contact-text">
-          If you have an application you are interested in developing, a feature
-          that you need built or a project that needs coding. I’d love to help
-          with it!
-        </p>
-        <form
-          class="form-display"
-          action="https://formspree.io/f/xbjezrzn"
-          method="POST">
-          <div class="fields">
-            <input
-              name="name"
-              type="text"
-              maxlength="30"
-              placeholder="John Doe"
-              required />
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="loremipsum@gmail.com"
-              required />
-            <textarea
-              maxlength="500"
-              name="message"
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Write your message here..."
-              required></textarea>
-          </div>
-          <button class="contact-button" id="desk-form-button" type="submit">
-            <span class="contact-link">Get in touch</span>
-          </button>
-          <div class="desk-form-msg desk-content-gone"><p class="desk-validation-messg"></p></div>
-        </form>
-      </div>
+        </div>
+      </section>
     </section>
-  </body>
+  </section>
+
+
+
   <script src="script.js"></script>
+</body>
 </html>
