@@ -73,7 +73,7 @@ const cardObject1 = {
     image: 'images/real-word-d-4(main).PNG',
     mobiledesc3: 'Create a Python-based web application designed to manage and track essential data related to animal populations. The application will facilitate the recording of animal population metrics, including mortality and births, while also maintaining detailed records for various departments involved in the management of these populations.',
     mobileGit3: 'https://github.com/toyman640/farmapp.git',
-    mobileLive3: '',
+    mobileLive3: 'https://toyman640.pythonanywhere.com/',
   },
 };
 
@@ -238,7 +238,7 @@ const deskObject1 = {
     imageC: 'images/real-word-d-4(main).PNG',
     dsec3: 'Create a mobile-view-only web application where users can sign up, establish budget categories, and log expenses corresponding to each category.',
     gitLink3: 'https://github.com/toyman640/farmapp.git',
-    liveLink3: '',
+    liveLink3: 'https://toyman640.pythonanywhere.com/',
   },
 };
 
