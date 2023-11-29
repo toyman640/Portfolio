@@ -390,21 +390,3 @@ function mailChecker(event) {
 }
 
 formButton.addEventListener('click', mailChecker);
-
-// const nameInput = document.querySelector('#name1');
-// const emailInput = document.querySelector('#email1');
-// const msgInput = document.querySelector('#message1');
-
-// if (localStorage.length !== 0) {
-//   nameInput.value = JSON.parse(localStorage.getItem('obj')).name;
-//   emailInput.value = JSON.parse(localStorage.getItem('obj')).email;
-//   msgInput.value = JSON.parse(localStorage.getItem('obj')).msg;
-// }
-// function populateStorage() {
-//   const obj = { name: nameInput.value, email: emailInput.value, msg: msgInput.value };
-//   localStorage.setItem('obj', JSON.stringify(obj));
-// }
-
-// nameInput.onchange = populateStorage;
-// emailInput.onchange = populateStorage;
-// msgInput.onchange = populateStorage;
