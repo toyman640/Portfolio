@@ -92,7 +92,7 @@ const deskUl3 = cardObject1.one.info[2];
 const deskimage1 = cardObject1.one.image;
 const mobileDescribe0 = cardObject1.one.mobiledesc0;
 const mobileGithub0 = cardObject1.one.mobileGit0;
-const { mobileLive0 } = cardObject1.one;
+const cmobileLive0 = cardObject1.one;
 
 function popUp() {
   mainPart.children[0].children[0].innerHTML = mainTittle;
@@ -101,7 +101,7 @@ function popUp() {
   mainPart.children[1].children[4].innerHTML = deskUl3;
   mainPart.children[2].src = deskimage1;
   mainPart.children[3].innerHTML = mobileDescribe0;
-  mainPart.children[5].children[0].href = mobileLive0;
+  mainPart.children[5].children[0].href = cmobileLive0;
   mainPart.children[5].children[1].href = mobileGithub0;
   mobilePopStacks.innerHTML = '';
   mobilePopStacks.innerHTML += `<button class="pop-stacks">HTML</button>
@@ -120,7 +120,7 @@ const desk2Ul3 = cardObject1.two.info[2];
 const desk2image1 = cardObject1.two.image;
 const mobileDescribe1 = cardObject1.two.mobiledesc1;
 const mobileGithub1 = cardObject1.two.mobileGit1;
-const { mobileLive1 } = cardObject1.two;
+const cmobileLive1 = cardObject1.two.mobileLive1;
 
 function popUp1() {
   handleBackground();
@@ -130,7 +130,7 @@ function popUp1() {
   mainPart.children[1].children[4].innerHTML = desk2Ul3;
   mainPart.children[2].src = desk2image1;
   mainPart.children[3].innerHTML = mobileDescribe1;
-  mainPart.children[5].children[0].href = mobileLive1;
+  mainPart.children[5].children[0].href = cmobileLive1;
   mainPart.children[5].children[1].href = mobileGithub1;
   mobilePopStacks.innerHTML = '';
   mobilePopStacks.innerHTML += `<button class="pop-stacks">HTML</button>
@@ -147,7 +147,7 @@ const desk3Ul3 = cardObject1.three.info[2];
 const desk3image1 = cardObject1.three.image;
 const mobileDescribe2 = cardObject1.three.mobiledesc2;
 const mobileGithub2 = cardObject1.three.mobileGit2;
-const { mobileLive2 } = cardObject1.three;
+const  cmobileLive2 = cardObject1.three.mobileLive2;
 mobilePopStacks.innerHTML += '';
 mobilePopStacks.innerHTML += `<button class="pop-stacks">HTML</button>
   <button class="pop-stacks">CSS</button>
@@ -161,7 +161,7 @@ function popUp2() {
   mainPart.children[1].children[4].innerHTML = desk3Ul3;
   mainPart.children[2].src = desk3image1;
   mainPart.children[3].innerHTML = mobileDescribe2;
-  mainPart.children[5].children[0].href = mobileLive2;
+  mainPart.children[5].children[0].href = cmobileLive2;
   mainPart.children[5].children[1].href = mobileGithub2;
 }
 
@@ -174,7 +174,7 @@ const desk4Ul3 = cardObject1.four.info[2];
 const desk4image1 = cardObject1.four.image;
 const mobileDescribe3 = cardObject1.four.mobiledesc3;
 const mobileGithub3 = cardObject1.four.mobileGit3;
-const { mobileLive3 } = cardObject1.four;
+const cmobileLive3 = cardObject1.four.mobileLive3;
 
 function popUp3() {
   handleBackground();
@@ -184,7 +184,7 @@ function popUp3() {
   mainPart.children[1].children[4].innerHTML = desk4Ul3;
   mainPart.children[2].src = desk4image1;
   mainPart.children[3].innerHTML = mobileDescribe3;
-  mainPart.children[5].children[0].href = mobileLive3;
+  mainPart.children[5].children[0].href = cmobileLive3;
   mainPart.children[5].children[1].href = mobileGithub3;
   mobilePopStacks.innerHTML = '';
   mobilePopStacks.innerHTML += `<button class="pop-stacks">HTML</button>
