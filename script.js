@@ -147,7 +147,7 @@ const desk3Ul3 = cardObject1.three.info[2];
 const desk3image1 = cardObject1.three.image;
 const mobileDescribe2 = cardObject1.three.mobiledesc2;
 const mobileGithub2 = cardObject1.three.mobileGit2;
-const  cmobileLive2 = cardObject1.three.mobileLive2;
+const cmobileLive2 = cardObject1.three.mobileLive2;
 mobilePopStacks.innerHTML += '';
 mobilePopStacks.innerHTML += `<button class="pop-stacks">HTML</button>
   <button class="pop-stacks">CSS</button>
