@@ -217,12 +217,11 @@ const deskObject1 = {
     liveLink0: 'https://toyman640.github.io/Agro-Summit/',
   },
   second: {
-    titleA: 'Budget Application',
-    infoA: ['KOWOPE', 'FINANCE', 'BUDGET'],
-    imageA: 'images/real-word-d-2(fix).PNG',
-    dsec1: 'Create a mobile-view-only web application where users can sign up, establish budget categories, and log expenses corresponding to each category.',
-    gitLink1: 'https://github.com/toyman640/budget-app.git',
-    liveLink1: 'https://kowope.onrender.com/',
+    titleA: 'Food Club',
+    infoA: ['WELNESS', 'CHARITY', 'ENVIRONMENT'],
+    imageA: 'images/food.png',
+    dsec1: 'Collaborate on a project aimed at reducing food wastage and providing access to free food for those in need.',
+    liveLink1: 'https://foodclub.live/impact',
   },
   third: {
     titleB: 'Meal Recipe',
